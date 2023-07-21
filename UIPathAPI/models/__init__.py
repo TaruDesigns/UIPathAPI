@@ -15,7 +15,6 @@
 from __future__ import absolute_import
 
 # import models into model package
-from UIPathAPI.models.oauth2model import OAuth2Model
 from UIPathAPI.models.accessible_folders_dto import AccessibleFoldersDto
 from UIPathAPI.models.activity_settings_dto import ActivitySettingsDto
 from UIPathAPI.models.add_queue_item_request import AddQueueItemRequest
@@ -27,12 +26,8 @@ from UIPathAPI.models.asset_dto import AssetDto
 from UIPathAPI.models.asset_folders_share_dto import AssetFoldersShareDto
 from UIPathAPI.models.asset_robot_value_dto import AssetRobotValueDto
 from UIPathAPI.models.asset_user_value_dto import AssetUserValueDto
-from UIPathAPI.models.assets_get_robot_by_name_and_key_request import (
-    AssetsGetRobotByNameAndKeyRequest,
-)
-from UIPathAPI.models.assets_set_robot_assets_by_key_request import (
-    AssetsSetRobotAssetsByKeyRequest,
-)
+from UIPathAPI.models.assets_get_robot_by_name_and_key_request import AssetsGetRobotByNameAndKeyRequest
+from UIPathAPI.models.assets_set_robot_assets_by_key_request import AssetsSetRobotAssetsByKeyRequest
 from UIPathAPI.models.attended_robot_dto import AttendedRobotDto
 from UIPathAPI.models.audit_log_dto import AuditLogDto
 from UIPathAPI.models.audit_log_entity_dto import AuditLogEntityDto
@@ -44,12 +39,8 @@ from UIPathAPI.models.build_test_set_request_message import BuildTestSetRequestM
 from UIPathAPI.models.bulk_add_queue_items_request import BulkAddQueueItemsRequest
 from UIPathAPI.models.bulk_item_dto_of_string import BulkItemDtoOfString
 from UIPathAPI.models.bulk_operation_error_response import BulkOperationErrorResponse
-from UIPathAPI.models.bulk_operation_response_dto_of_failed_queue_item_dto import (
-    BulkOperationResponseDtoOfFailedQueueItemDto,
-)
-from UIPathAPI.models.bulk_operation_response_dto_of_int64 import (
-    BulkOperationResponseDtoOfInt64,
-)
+from UIPathAPI.models.bulk_operation_response_dto_of_failed_queue_item_dto import BulkOperationResponseDtoOfFailedQueueItemDto
+from UIPathAPI.models.bulk_operation_response_dto_of_int64 import BulkOperationResponseDtoOfInt64
 from UIPathAPI.models.bulk_tasks_completion_request import BulkTasksCompletionRequest
 from UIPathAPI.models.bulk_tasks_data_update_request import BulkTasksDataUpdateRequest
 from UIPathAPI.models.calendar_dto import CalendarDto
@@ -57,13 +48,9 @@ from UIPathAPI.models.calendar_exists_request import CalendarExistsRequest
 from UIPathAPI.models.cloud_template_dto import CloudTemplateDto
 from UIPathAPI.models.configuration_entry import ConfigurationEntry
 from UIPathAPI.models.consumption_license_dto import ConsumptionLicenseDto
-from UIPathAPI.models.consumption_license_stats_model import (
-    ConsumptionLicenseStatsModel,
-)
+from UIPathAPI.models.consumption_license_stats_model import ConsumptionLicenseStatsModel
 from UIPathAPI.models.count_stats import CountStats
-from UIPathAPI.models.credential_set_default_store_for_resource_type_request import (
-    CredentialSetDefaultStoreForResourceTypeRequest,
-)
+from UIPathAPI.models.credential_set_default_store_for_resource_type_request import CredentialSetDefaultStoreForResourceTypeRequest
 from UIPathAPI.models.credential_store_details_dto import CredentialStoreDetailsDto
 from UIPathAPI.models.credential_store_dto import CredentialStoreDto
 from UIPathAPI.models.credential_store_resource_dto import CredentialStoreResourceDto
@@ -72,9 +59,7 @@ from UIPathAPI.models.custom_event_dto import CustomEventDto
 from UIPathAPI.models.custom_key_value_pair import CustomKeyValuePair
 from UIPathAPI.models.deactivate_license_request import DeactivateLicenseRequest
 from UIPathAPI.models.default_credential_store_dto import DefaultCredentialStoreDto
-from UIPathAPI.models.delete_inactive_sessions_parameters import (
-    DeleteInactiveSessionsParameters,
-)
+from UIPathAPI.models.delete_inactive_sessions_parameters import DeleteInactiveSessionsParameters
 from UIPathAPI.models.directory_object_dto import DirectoryObjectDto
 from UIPathAPI.models.directory_permission_dto import DirectoryPermissionDto
 from UIPathAPI.models.domain_dto import DomainDto
@@ -84,28 +69,20 @@ from UIPathAPI.models.entry_point_data_variation_dto import EntryPointDataVariat
 from UIPathAPI.models.entry_point_dto import EntryPointDto
 from UIPathAPI.models.environment_dto import EnvironmentDto
 from UIPathAPI.models.environment_robot_request import EnvironmentRobotRequest
-from UIPathAPI.models.environments_set_robots_request import (
-    EnvironmentsSetRobotsRequest,
-)
+from UIPathAPI.models.environments_set_robots_request import EnvironmentsSetRobotsRequest
 from UIPathAPI.models.error_info import ErrorInfo
 from UIPathAPI.models.error_result import ErrorResult
-from UIPathAPI.models.execution_media_delete_media_by_job_id_request import (
-    ExecutionMediaDeleteMediaByJobIdRequest,
-)
+from UIPathAPI.models.execution_media_delete_media_by_job_id_request import ExecutionMediaDeleteMediaByJobIdRequest
 from UIPathAPI.models.execution_media_dto import ExecutionMediaDto
 from UIPathAPI.models.execution_setting_definition import ExecutionSettingDefinition
-from UIPathAPI.models.execution_settings_configuration import (
-    ExecutionSettingsConfiguration,
-)
+from UIPathAPI.models.execution_settings_configuration import ExecutionSettingsConfiguration
 from UIPathAPI.models.export_model import ExportModel
 from UIPathAPI.models.extended_calendar_dto import ExtendedCalendarDto
 from UIPathAPI.models.extended_folder_dto import ExtendedFolderDto
 from UIPathAPI.models.extended_machine_dto import ExtendedMachineDto
 from UIPathAPI.models.extended_robot_dto import ExtendedRobotDto
 from UIPathAPI.models.failed_queue_item_dto import FailedQueueItemDto
-from UIPathAPI.models.folder_assign_domain_user_request import (
-    FolderAssignDomainUserRequest,
-)
+from UIPathAPI.models.folder_assign_domain_user_request import FolderAssignDomainUserRequest
 from UIPathAPI.models.folder_assign_machines_request import FolderAssignMachinesRequest
 from UIPathAPI.models.folder_assign_users_request import FolderAssignUsersRequest
 from UIPathAPI.models.folder_assignments_dto import FolderAssignmentsDto
@@ -115,9 +92,7 @@ from UIPathAPI.models.folder_navigation_context_dto import FolderNavigationConte
 from UIPathAPI.models.folder_roles_dto import FolderRolesDto
 from UIPathAPI.models.form_task_create_request import FormTaskCreateRequest
 from UIPathAPI.models.host_availability_dto import HostAvailabilityDto
-from UIPathAPI.models.host_delete_tenant_license_request import (
-    HostDeleteTenantLicenseRequest,
-)
+from UIPathAPI.models.host_delete_tenant_license_request import HostDeleteTenantLicenseRequest
 from UIPathAPI.models.host_license_dto import HostLicenseDto
 from UIPathAPI.models.host_license_per_tenant_dto import HostLicensePerTenantDto
 from UIPathAPI.models.host_set_tenant_license_request import HostSetTenantLicenseRequest
@@ -130,9 +105,7 @@ from UIPathAPI.models.job_stopping_event_dto import JobStoppingEventDto
 from UIPathAPI.models.job_suspended_event_dto import JobSuspendedEventDto
 from UIPathAPI.models.job_terminating_event_dto import JobTerminatingEventDto
 from UIPathAPI.models.job_trigger_dto import JobTriggerDto
-from UIPathAPI.models.job_trigger_with_wait_events_dto import (
-    JobTriggerWithWaitEventsDto,
-)
+from UIPathAPI.models.job_trigger_with_wait_events_dto import JobTriggerWithWaitEventsDto
 from UIPathAPI.models.jobs_created_event_dto import JobsCreatedEventDto
 from UIPathAPI.models.jobs_stopped_event_dto import JobsStoppedEventDto
 from UIPathAPI.models.key_value_pair_of_string_string import KeyValuePairOfStringString
@@ -144,16 +117,10 @@ from UIPathAPI.models.license_request import LicenseRequest
 from UIPathAPI.models.license_result_dto import LicenseResultDto
 from UIPathAPI.models.license_runtime_dto import LicenseRuntimeDto
 from UIPathAPI.models.license_stats_model import LicenseStatsModel
-from UIPathAPI.models.licenses_toggle_enabled_request import (
-    LicensesToggleEnabledRequest,
-)
+from UIPathAPI.models.licenses_toggle_enabled_request import LicensesToggleEnabledRequest
 from UIPathAPI.models.light_role_dto import LightRoleDto
-from UIPathAPI.models.list_result_dto_of_language_info import (
-    ListResultDtoOfLanguageInfo,
-)
-from UIPathAPI.models.list_result_dto_of_name_value_dto import (
-    ListResultDtoOfNameValueDto,
-)
+from UIPathAPI.models.list_result_dto_of_language_info import ListResultDtoOfLanguageInfo
+from UIPathAPI.models.list_result_dto_of_name_value_dto import ListResultDtoOfNameValueDto
 from UIPathAPI.models.log_dto import LogDto
 from UIPathAPI.models.login_model import LoginModel
 from UIPathAPI.models.long_versioned_entity import LongVersionedEntity
@@ -167,9 +134,7 @@ from UIPathAPI.models.machine_runtime_dto import MachineRuntimeDto
 from UIPathAPI.models.machine_session_dto import MachineSessionDto
 from UIPathAPI.models.machine_session_runtime_dto import MachineSessionRuntimeDto
 from UIPathAPI.models.machine_vpn_settings_dto import MachineVpnSettingsDto
-from UIPathAPI.models.machines_folder_associations_dto import (
-    MachinesFolderAssociationsDto,
-)
+from UIPathAPI.models.machines_folder_associations_dto import MachinesFolderAssociationsDto
 from UIPathAPI.models.machines_robot_version_dto import MachinesRobotVersionDto
 from UIPathAPI.models.maintenance_setting import MaintenanceSetting
 from UIPathAPI.models.maintenance_state_log import MaintenanceStateLog
@@ -177,228 +142,80 @@ from UIPathAPI.models.maintenance_window_dto import MaintenanceWindowDto
 from UIPathAPI.models.move_folder_machine_change import MoveFolderMachineChange
 from UIPathAPI.models.name_value_dto import NameValueDto
 from UIPathAPI.models.o_data_value_of_boolean import ODataValueOfBoolean
-from UIPathAPI.models.o_data_value_of_i_dictionary_of_int64_boolean import (
-    ODataValueOfIDictionaryOfInt64Boolean,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_alert_dto import (
-    ODataValueOfIEnumerableOfAlertDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_asset_dto import (
-    ODataValueOfIEnumerableOfAssetDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_audit_log_dto import (
-    ODataValueOfIEnumerableOfAuditLogDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_audit_log_entity_dto import (
-    ODataValueOfIEnumerableOfAuditLogEntityDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_blob_file_dto import (
-    ODataValueOfIEnumerableOfBlobFileDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_bucket_dto import (
-    ODataValueOfIEnumerableOfBucketDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_bulk_item_dto_of_string import (
-    ODataValueOfIEnumerableOfBulkItemDtoOfString,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_configuration_entry import (
-    ODataValueOfIEnumerableOfConfigurationEntry,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_credential_store_dto import (
-    ODataValueOfIEnumerableOfCredentialStoreDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_credential_store_resource_dto import (
-    ODataValueOfIEnumerableOfCredentialStoreResourceDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_credentials_proxy_resource_dto import (
-    ODataValueOfIEnumerableOfCredentialsProxyResourceDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_environment_dto import (
-    ODataValueOfIEnumerableOfEnvironmentDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_execution_media_dto import (
-    ODataValueOfIEnumerableOfExecutionMediaDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_calendar_dto import (
-    ODataValueOfIEnumerableOfExtendedCalendarDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_machine_dto import (
-    ODataValueOfIEnumerableOfExtendedMachineDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_robot_dto import (
-    ODataValueOfIEnumerableOfExtendedRobotDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_folder_dto import (
-    ODataValueOfIEnumerableOfFolderDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_host_license_dto import (
-    ODataValueOfIEnumerableOfHostLicenseDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_int64 import (
-    ODataValueOfIEnumerableOfInt64,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_dto import (
-    ODataValueOfIEnumerableOfJobDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_trigger_dto import (
-    ODataValueOfIEnumerableOfJobTriggerDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_trigger_with_wait_events_dto import (
-    ODataValueOfIEnumerableOfJobTriggerWithWaitEventsDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_key_value_pair_of_string_string import (
-    ODataValueOfIEnumerableOfKeyValuePairOfStringString,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_library_dto import (
-    ODataValueOfIEnumerableOfLibraryDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_license_named_user_dto import (
-    ODataValueOfIEnumerableOfLicenseNamedUserDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_license_runtime_dto import (
-    ODataValueOfIEnumerableOfLicenseRuntimeDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_log_dto import (
-    ODataValueOfIEnumerableOfLogDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_dto import (
-    ODataValueOfIEnumerableOfMachineDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_folder_dto import (
-    ODataValueOfIEnumerableOfMachineFolderDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_runtime_dto import (
-    ODataValueOfIEnumerableOfMachineRuntimeDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_session_dto import (
-    ODataValueOfIEnumerableOfMachineSessionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_session_runtime_dto import (
-    ODataValueOfIEnumerableOfMachineSessionRuntimeDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_move_folder_machine_change import (
-    ODataValueOfIEnumerableOfMoveFolderMachineChange,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_organization_unit_dto import (
-    ODataValueOfIEnumerableOfOrganizationUnitDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_permission_dto import (
-    ODataValueOfIEnumerableOfPermissionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_personal_workspace_dto import (
-    ODataValueOfIEnumerableOfPersonalWorkspaceDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_process_dto import (
-    ODataValueOfIEnumerableOfProcessDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_process_schedule_dto import (
-    ODataValueOfIEnumerableOfProcessScheduleDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_definition_dto import (
-    ODataValueOfIEnumerableOfQueueDefinitionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_comment_dto import (
-    ODataValueOfIEnumerableOfQueueItemCommentDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_dto import (
-    ODataValueOfIEnumerableOfQueueItemDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_event_dto import (
-    ODataValueOfIEnumerableOfQueueItemEventDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_processing_record_dto import (
-    ODataValueOfIEnumerableOfQueueProcessingRecordDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_processing_status_dto import (
-    ODataValueOfIEnumerableOfQueueProcessingStatusDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_retention_setting_dto import (
-    ODataValueOfIEnumerableOfQueueRetentionSettingDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_release_dto import (
-    ODataValueOfIEnumerableOfReleaseDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_release_retention_setting_dto import (
-    ODataValueOfIEnumerableOfReleaseRetentionSettingDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_robot_dto import (
-    ODataValueOfIEnumerableOfRobotDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_robots_from_folder_model import (
-    ODataValueOfIEnumerableOfRobotsFromFolderModel,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_role_dto import (
-    ODataValueOfIEnumerableOfRoleDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_session_dto import (
-    ODataValueOfIEnumerableOfSessionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_settings_dto import (
-    ODataValueOfIEnumerableOfSettingsDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_simple_user_dto import (
-    ODataValueOfIEnumerableOfSimpleUserDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_string import (
-    ODataValueOfIEnumerableOfString,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_activity_dto import (
-    ODataValueOfIEnumerableOfTaskActivityDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_catalog_dto import (
-    ODataValueOfIEnumerableOfTaskCatalogDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_dto import (
-    ODataValueOfIEnumerableOfTaskDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_note_dto import (
-    ODataValueOfIEnumerableOfTaskNoteDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_operation_error_response import (
-    ODataValueOfIEnumerableOfTaskOperationErrorResponse,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_tenant_dto import (
-    ODataValueOfIEnumerableOfTenantDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_case_definition_dto import (
-    ODataValueOfIEnumerableOfTestCaseDefinitionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_case_execution_dto import (
-    ODataValueOfIEnumerableOfTestCaseExecutionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_data_queue_dto import (
-    ODataValueOfIEnumerableOfTestDataQueueDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_data_queue_item_o_data_dto import (
-    ODataValueOfIEnumerableOfTestDataQueueItemODataDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_dto import (
-    ODataValueOfIEnumerableOfTestSetDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_execution_dto import (
-    ODataValueOfIEnumerableOfTestSetExecutionDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_schedule_dto import (
-    ODataValueOfIEnumerableOfTestSetScheduleDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_dto import (
-    ODataValueOfIEnumerableOfUserDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_login_attempt_dto import (
-    ODataValueOfIEnumerableOfUserLoginAttemptDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_login_info_dto import (
-    ODataValueOfIEnumerableOfUserLoginInfoDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_roles_dto import (
-    ODataValueOfIEnumerableOfUserRolesDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_webhook_dto import (
-    ODataValueOfIEnumerableOfWebhookDto,
-)
-from UIPathAPI.models.o_data_value_of_i_enumerable_of_webhook_event_type_dto import (
-    ODataValueOfIEnumerableOfWebhookEventTypeDto,
-)
+from UIPathAPI.models.o_data_value_of_i_dictionary_of_int64_boolean import ODataValueOfIDictionaryOfInt64Boolean
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_alert_dto import ODataValueOfIEnumerableOfAlertDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_asset_dto import ODataValueOfIEnumerableOfAssetDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_audit_log_dto import ODataValueOfIEnumerableOfAuditLogDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_audit_log_entity_dto import ODataValueOfIEnumerableOfAuditLogEntityDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_blob_file_dto import ODataValueOfIEnumerableOfBlobFileDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_bucket_dto import ODataValueOfIEnumerableOfBucketDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_bulk_item_dto_of_string import ODataValueOfIEnumerableOfBulkItemDtoOfString
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_configuration_entry import ODataValueOfIEnumerableOfConfigurationEntry
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_credential_store_dto import ODataValueOfIEnumerableOfCredentialStoreDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_credential_store_resource_dto import ODataValueOfIEnumerableOfCredentialStoreResourceDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_credentials_proxy_resource_dto import ODataValueOfIEnumerableOfCredentialsProxyResourceDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_environment_dto import ODataValueOfIEnumerableOfEnvironmentDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_execution_media_dto import ODataValueOfIEnumerableOfExecutionMediaDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_calendar_dto import ODataValueOfIEnumerableOfExtendedCalendarDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_machine_dto import ODataValueOfIEnumerableOfExtendedMachineDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_extended_robot_dto import ODataValueOfIEnumerableOfExtendedRobotDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_folder_dto import ODataValueOfIEnumerableOfFolderDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_host_license_dto import ODataValueOfIEnumerableOfHostLicenseDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_int64 import ODataValueOfIEnumerableOfInt64
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_dto import ODataValueOfIEnumerableOfJobDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_trigger_dto import ODataValueOfIEnumerableOfJobTriggerDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_job_trigger_with_wait_events_dto import ODataValueOfIEnumerableOfJobTriggerWithWaitEventsDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_key_value_pair_of_string_string import ODataValueOfIEnumerableOfKeyValuePairOfStringString
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_library_dto import ODataValueOfIEnumerableOfLibraryDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_license_named_user_dto import ODataValueOfIEnumerableOfLicenseNamedUserDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_license_runtime_dto import ODataValueOfIEnumerableOfLicenseRuntimeDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_log_dto import ODataValueOfIEnumerableOfLogDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_dto import ODataValueOfIEnumerableOfMachineDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_folder_dto import ODataValueOfIEnumerableOfMachineFolderDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_runtime_dto import ODataValueOfIEnumerableOfMachineRuntimeDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_session_dto import ODataValueOfIEnumerableOfMachineSessionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_machine_session_runtime_dto import ODataValueOfIEnumerableOfMachineSessionRuntimeDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_move_folder_machine_change import ODataValueOfIEnumerableOfMoveFolderMachineChange
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_organization_unit_dto import ODataValueOfIEnumerableOfOrganizationUnitDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_permission_dto import ODataValueOfIEnumerableOfPermissionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_personal_workspace_dto import ODataValueOfIEnumerableOfPersonalWorkspaceDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_process_dto import ODataValueOfIEnumerableOfProcessDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_process_schedule_dto import ODataValueOfIEnumerableOfProcessScheduleDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_definition_dto import ODataValueOfIEnumerableOfQueueDefinitionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_comment_dto import ODataValueOfIEnumerableOfQueueItemCommentDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_dto import ODataValueOfIEnumerableOfQueueItemDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_item_event_dto import ODataValueOfIEnumerableOfQueueItemEventDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_processing_record_dto import ODataValueOfIEnumerableOfQueueProcessingRecordDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_processing_status_dto import ODataValueOfIEnumerableOfQueueProcessingStatusDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_queue_retention_setting_dto import ODataValueOfIEnumerableOfQueueRetentionSettingDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_release_dto import ODataValueOfIEnumerableOfReleaseDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_release_retention_setting_dto import ODataValueOfIEnumerableOfReleaseRetentionSettingDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_robot_dto import ODataValueOfIEnumerableOfRobotDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_robots_from_folder_model import ODataValueOfIEnumerableOfRobotsFromFolderModel
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_role_dto import ODataValueOfIEnumerableOfRoleDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_session_dto import ODataValueOfIEnumerableOfSessionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_settings_dto import ODataValueOfIEnumerableOfSettingsDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_simple_user_dto import ODataValueOfIEnumerableOfSimpleUserDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_string import ODataValueOfIEnumerableOfString
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_activity_dto import ODataValueOfIEnumerableOfTaskActivityDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_catalog_dto import ODataValueOfIEnumerableOfTaskCatalogDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_dto import ODataValueOfIEnumerableOfTaskDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_note_dto import ODataValueOfIEnumerableOfTaskNoteDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_task_operation_error_response import ODataValueOfIEnumerableOfTaskOperationErrorResponse
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_tenant_dto import ODataValueOfIEnumerableOfTenantDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_case_definition_dto import ODataValueOfIEnumerableOfTestCaseDefinitionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_case_execution_dto import ODataValueOfIEnumerableOfTestCaseExecutionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_data_queue_dto import ODataValueOfIEnumerableOfTestDataQueueDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_data_queue_item_o_data_dto import ODataValueOfIEnumerableOfTestDataQueueItemODataDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_dto import ODataValueOfIEnumerableOfTestSetDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_execution_dto import ODataValueOfIEnumerableOfTestSetExecutionDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_test_set_schedule_dto import ODataValueOfIEnumerableOfTestSetScheduleDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_dto import ODataValueOfIEnumerableOfUserDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_login_attempt_dto import ODataValueOfIEnumerableOfUserLoginAttemptDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_login_info_dto import ODataValueOfIEnumerableOfUserLoginInfoDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_user_roles_dto import ODataValueOfIEnumerableOfUserRolesDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_webhook_dto import ODataValueOfIEnumerableOfWebhookDto
+from UIPathAPI.models.o_data_value_of_i_enumerable_of_webhook_event_type_dto import ODataValueOfIEnumerableOfWebhookEventTypeDto
 from UIPathAPI.models.o_data_value_of_int64 import ODataValueOfInt64
 from UIPathAPI.models.o_data_value_of_string import ODataValueOfString
 from UIPathAPI.models.organization_unit_dto import OrganizationUnitDto
@@ -407,21 +224,15 @@ from UIPathAPI.models.package_uploaded_event import PackageUploadedEvent
 from UIPathAPI.models.page_result_dto_of_folder_dto import PageResultDtoOfFolderDto
 from UIPathAPI.models.permission_dto import PermissionDto
 from UIPathAPI.models.personal_workspace_dto import PersonalWorkspaceDto
-from UIPathAPI.models.personal_workspaces_convert_to_folder_request import (
-    PersonalWorkspacesConvertToFolderRequest,
-)
+from UIPathAPI.models.personal_workspaces_convert_to_folder_request import PersonalWorkspacesConvertToFolderRequest
 from UIPathAPI.models.ping_event_dto import PingEventDto
 from UIPathAPI.models.process_alert_dto import ProcessAlertDto
 from UIPathAPI.models.process_dto import ProcessDto
 from UIPathAPI.models.process_schedule_dto import ProcessScheduleDto
-from UIPathAPI.models.process_schedule_failed_event_dto import (
-    ProcessScheduleFailedEventDto,
-)
+from UIPathAPI.models.process_schedule_failed_event_dto import ProcessScheduleFailedEventDto
 from UIPathAPI.models.process_set_enabled_request import ProcessSetEnabledRequest
 from UIPathAPI.models.process_settings_dto import ProcessSettingsDto
-from UIPathAPI.models.processes_set_arguments_request import (
-    ProcessesSetArgumentsRequest,
-)
+from UIPathAPI.models.processes_set_arguments_request import ProcessesSetArgumentsRequest
 from UIPathAPI.models.processing_exception_dto import ProcessingExceptionDto
 from UIPathAPI.models.queue_created_event_dto import QueueCreatedEventDto
 from UIPathAPI.models.queue_definition_dto import QueueDefinitionDto
@@ -442,42 +253,24 @@ from UIPathAPI.models.queue_items_abandoned_event_dto import QueueItemsAbandoned
 from UIPathAPI.models.queue_processing_record_dto import QueueProcessingRecordDto
 from UIPathAPI.models.queue_processing_status_dto import QueueProcessingStatusDto
 from UIPathAPI.models.queue_retention_setting_dto import QueueRetentionSettingDto
-from UIPathAPI.models.queue_set_item_review_status_request import (
-    QueueSetItemReviewStatusRequest,
-)
+from UIPathAPI.models.queue_set_item_review_status_request import QueueSetItemReviewStatusRequest
 from UIPathAPI.models.queue_set_item_reviewer_request import QueueSetItemReviewerRequest
-from UIPathAPI.models.queue_set_transaction_progress_request import (
-    QueueSetTransactionProgressRequest,
-)
-from UIPathAPI.models.queue_set_transaction_result_request import (
-    QueueSetTransactionResultRequest,
-)
-from UIPathAPI.models.queue_unset_item_reviewer_request import (
-    QueueUnsetItemReviewerRequest,
-)
+from UIPathAPI.models.queue_set_transaction_progress_request import QueueSetTransactionProgressRequest
+from UIPathAPI.models.queue_set_transaction_result_request import QueueSetTransactionResultRequest
+from UIPathAPI.models.queue_unset_item_reviewer_request import QueueUnsetItemReviewerRequest
 from UIPathAPI.models.queue_updated_event_dto import QueueUpdatedEventDto
-from UIPathAPI.models.queues_start_transaction_request import (
-    QueuesStartTransactionRequest,
-)
+from UIPathAPI.models.queues_start_transaction_request import QueuesStartTransactionRequest
 from UIPathAPI.models.raise_process_alert_request import RaiseProcessAlertRequest
-from UIPathAPI.models.reexecute_test_cases_options_dto import (
-    ReexecuteTestCasesOptionsDto,
-)
+from UIPathAPI.models.reexecute_test_cases_options_dto import ReexecuteTestCasesOptionsDto
 from UIPathAPI.models.release_created_event_dto import ReleaseCreatedEventDto
 from UIPathAPI.models.release_deleted_event_dto import ReleaseDeletedEventDto
 from UIPathAPI.models.release_dto import ReleaseDto
 from UIPathAPI.models.release_retention_setting_dto import ReleaseRetentionSettingDto
 from UIPathAPI.models.release_updated_event_dto import ReleaseUpdatedEventDto
 from UIPathAPI.models.release_version_dto import ReleaseVersionDto
-from UIPathAPI.models.releases_update_to_latest_package_version_bulk_request import (
-    ReleasesUpdateToLatestPackageVersionBulkRequest,
-)
-from UIPathAPI.models.releases_update_to_specific_package_version_request import (
-    ReleasesUpdateToSpecificPackageVersionRequest,
-)
-from UIPathAPI.models.remove_machines_from_folder_request import (
-    RemoveMachinesFromFolderRequest,
-)
+from UIPathAPI.models.releases_update_to_latest_package_version_bulk_request import ReleasesUpdateToLatestPackageVersionBulkRequest
+from UIPathAPI.models.releases_update_to_specific_package_version_request import ReleasesUpdateToSpecificPackageVersionRequest
+from UIPathAPI.models.remove_machines_from_folder_request import RemoveMachinesFromFolderRequest
 from UIPathAPI.models.remove_user_from_folder_request import RemoveUserFromFolderRequest
 from UIPathAPI.models.resource_overwrite_dto import ResourceOverwriteDto
 from UIPathAPI.models.response_dictionary_dto import ResponseDictionaryDto
@@ -493,21 +286,15 @@ from UIPathAPI.models.robot_license_dto import RobotLicenseDto
 from UIPathAPI.models.robot_updated_event_dto import RobotUpdatedEventDto
 from UIPathAPI.models.robot_user_dto import RobotUserDto
 from UIPathAPI.models.robot_with_license_dto import RobotWithLicenseDto
-from UIPathAPI.models.robots_convert_to_floating_request import (
-    RobotsConvertToFloatingRequest,
-)
+from UIPathAPI.models.robots_convert_to_floating_request import RobotsConvertToFloatingRequest
 from UIPathAPI.models.robots_from_folder_model import RobotsFromFolderModel
-from UIPathAPI.models.robots_toggle_enabled_status_request import (
-    RobotsToggleEnabledStatusRequest,
-)
+from UIPathAPI.models.robots_toggle_enabled_status_request import RobotsToggleEnabledStatusRequest
 from UIPathAPI.models.role_dto import RoleDto
 from UIPathAPI.models.role_users_dto import RoleUsersDto
 from UIPathAPI.models.session_dto import SessionDto
 from UIPathAPI.models.session_event_data import SessionEventData
 from UIPathAPI.models.session_updated_event_dto import SessionUpdatedEventDto
-from UIPathAPI.models.sessions_toggle_machine_session_debug_mode_request import (
-    SessionsToggleMachineSessionDebugModeRequest,
-)
+from UIPathAPI.models.sessions_toggle_machine_session_debug_mode_request import SessionsToggleMachineSessionDebugModeRequest
 from UIPathAPI.models.set_users_request import SetUsersRequest
 from UIPathAPI.models.settings_delete_bulk_request import SettingsDeleteBulkRequest
 from UIPathAPI.models.settings_dto import SettingsDto
@@ -524,23 +311,17 @@ from UIPathAPI.models.simple_role_dto import SimpleRoleDto
 from UIPathAPI.models.simple_user_dto import SimpleUserDto
 from UIPathAPI.models.simple_user_entity_dto import SimpleUserEntityDto
 from UIPathAPI.models.smtp_setting_model import SmtpSettingModel
-from UIPathAPI.models.specific_entity_monitoring_filters import (
-    SpecificEntityMonitoringFilters,
-)
+from UIPathAPI.models.specific_entity_monitoring_filters import SpecificEntityMonitoringFilters
 from UIPathAPI.models.start_jobs_request import StartJobsRequest
 from UIPathAPI.models.start_process_dto import StartProcessDto
 from UIPathAPI.models.stop_job_request import StopJobRequest
 from UIPathAPI.models.stop_jobs_request import StopJobsRequest
 from UIPathAPI.models.tag_dto import TagDto
 from UIPathAPI.models.task_activity_dto import TaskActivityDto
-from UIPathAPI.models.task_assignment_changed_event_dto import (
-    TaskAssignmentChangedEventDto,
-)
+from UIPathAPI.models.task_assignment_changed_event_dto import TaskAssignmentChangedEventDto
 from UIPathAPI.models.task_assignment_request import TaskAssignmentRequest
 from UIPathAPI.models.task_catalog_dto import TaskCatalogDto
-from UIPathAPI.models.task_catalog_extended_details_dto import (
-    TaskCatalogExtendedDetailsDto,
-)
+from UIPathAPI.models.task_catalog_extended_details_dto import TaskCatalogExtendedDetailsDto
 from UIPathAPI.models.task_catalog_folders_share_dto import TaskCatalogFoldersShareDto
 from UIPathAPI.models.task_catalog_request import TaskCatalogRequest
 from UIPathAPI.models.task_completed_event_dto import TaskCompletedEventDto
@@ -556,9 +337,7 @@ from UIPathAPI.models.task_forwarded_event_dto import TaskForwardedEventDto
 from UIPathAPI.models.task_note_create_request import TaskNoteCreateRequest
 from UIPathAPI.models.task_note_dto import TaskNoteDto
 from UIPathAPI.models.task_operation_error_response import TaskOperationErrorResponse
-from UIPathAPI.models.task_save_and_reassignment_request import (
-    TaskSaveAndReassignmentRequest,
-)
+from UIPathAPI.models.task_save_and_reassignment_request import TaskSaveAndReassignmentRequest
 from UIPathAPI.models.task_saved_event_dto import TaskSavedEventDto
 from UIPathAPI.models.task_tags_save_request import TaskTagsSaveRequest
 from UIPathAPI.models.tasks_assign_request import TasksAssignRequest
@@ -569,58 +348,36 @@ from UIPathAPI.models.tenant_set_active_request import TenantSetActiveRequest
 from UIPathAPI.models.test_case_assertion_dto import TestCaseAssertionDto
 from UIPathAPI.models.test_case_definition_dto import TestCaseDefinitionDto
 from UIPathAPI.models.test_case_dto import TestCaseDto
-from UIPathAPI.models.test_case_execution_arguments_dto import (
-    TestCaseExecutionArgumentsDto,
-)
-from UIPathAPI.models.test_case_execution_attachment_dto import (
-    TestCaseExecutionAttachmentDto,
-)
-from UIPathAPI.models.test_case_execution_attachment_filter_dto import (
-    TestCaseExecutionAttachmentFilterDto,
-)
+from UIPathAPI.models.test_case_execution_arguments_dto import TestCaseExecutionArgumentsDto
+from UIPathAPI.models.test_case_execution_attachment_dto import TestCaseExecutionAttachmentDto
+from UIPathAPI.models.test_case_execution_attachment_filter_dto import TestCaseExecutionAttachmentFilterDto
 from UIPathAPI.models.test_case_execution_dto import TestCaseExecutionDto
 from UIPathAPI.models.test_case_execution_options_dto import TestCaseExecutionOptionsDto
 from UIPathAPI.models.test_data_queue_add_item_dto import TestDataQueueAddItemDto
-from UIPathAPI.models.test_data_queue_bulk_add_items_dto import (
-    TestDataQueueBulkAddItemsDto,
-)
+from UIPathAPI.models.test_data_queue_bulk_add_items_dto import TestDataQueueBulkAddItemsDto
 from UIPathAPI.models.test_data_queue_dto import TestDataQueueDto
-from UIPathAPI.models.test_data_queue_get_next_item_dto import (
-    TestDataQueueGetNextItemDto,
-)
+from UIPathAPI.models.test_data_queue_get_next_item_dto import TestDataQueueGetNextItemDto
 from UIPathAPI.models.test_data_queue_item_dto import TestDataQueueItemDto
 from UIPathAPI.models.test_data_queue_item_o_data_dto import TestDataQueueItemODataDto
-from UIPathAPI.models.test_data_queue_set_all_items_consumed_dto import (
-    TestDataQueueSetAllItemsConsumedDto,
-)
-from UIPathAPI.models.test_data_queue_set_items_consumed_dto import (
-    TestDataQueueSetItemsConsumedDto,
-)
+from UIPathAPI.models.test_data_queue_set_all_items_consumed_dto import TestDataQueueSetAllItemsConsumedDto
+from UIPathAPI.models.test_data_queue_set_items_consumed_dto import TestDataQueueSetItemsConsumedDto
 from UIPathAPI.models.test_environment_dto import TestEnvironmentDto
 from UIPathAPI.models.test_package_info_dto import TestPackageInfoDto
 from UIPathAPI.models.test_release_version_dto import TestReleaseVersionDto
 from UIPathAPI.models.test_set_dto import TestSetDto
-from UIPathAPI.models.test_set_execution_attachment_dto import (
-    TestSetExecutionAttachmentDto,
-)
-from UIPathAPI.models.test_set_execution_attachment_filter_dto import (
-    TestSetExecutionAttachmentFilterDto,
-)
+from UIPathAPI.models.test_set_execution_attachment_dto import TestSetExecutionAttachmentDto
+from UIPathAPI.models.test_set_execution_attachment_filter_dto import TestSetExecutionAttachmentFilterDto
 from UIPathAPI.models.test_set_execution_dto import TestSetExecutionDto
 from UIPathAPI.models.test_set_execution_options_dto import TestSetExecutionOptionsDto
 from UIPathAPI.models.test_set_input_argument_dto import TestSetInputArgumentDto
 from UIPathAPI.models.test_set_package_dto import TestSetPackageDto
 from UIPathAPI.models.test_set_schedule_dto import TestSetScheduleDto
-from UIPathAPI.models.test_set_schedules_enabled_request import (
-    TestSetSchedulesEnabledRequest,
-)
+from UIPathAPI.models.test_set_schedules_enabled_request import TestSetSchedulesEnabledRequest
 from UIPathAPI.models.transaction_data_dto import TransactionDataDto
 from UIPathAPI.models.transaction_result_dto import TransactionResultDto
 from UIPathAPI.models.unattended_robot_dto import UnattendedRobotDto
 from UIPathAPI.models.update_info_dto import UpdateInfoDto
-from UIPathAPI.models.update_machines_to_folder_associations_request import (
-    UpdateMachinesToFolderAssociationsRequest,
-)
+from UIPathAPI.models.update_machines_to_folder_associations_request import UpdateMachinesToFolderAssociationsRequest
 from UIPathAPI.models.update_policy_dto import UpdatePolicyDto
 from UIPathAPI.models.update_settings_dto import UpdateSettingsDto
 from UIPathAPI.models.update_user_setting_request import UpdateUserSettingRequest
@@ -638,13 +395,9 @@ from UIPathAPI.models.user_role_assignments_dto import UserRoleAssignmentsDto
 from UIPathAPI.models.user_role_dto import UserRoleDto
 from UIPathAPI.models.user_roles_dto import UserRolesDto
 from UIPathAPI.models.users_set_active_request import UsersSetActiveRequest
-from UIPathAPI.models.users_toggle_organization_unit_request import (
-    UsersToggleOrganizationUnitRequest,
-)
+from UIPathAPI.models.users_toggle_organization_unit_request import UsersToggleOrganizationUnitRequest
 from UIPathAPI.models.users_toggle_role_request import UsersToggleRoleRequest
-from UIPathAPI.models.validate_process_schedule_request import (
-    ValidateProcessScheduleRequest,
-)
+from UIPathAPI.models.validate_process_schedule_request import ValidateProcessScheduleRequest
 from UIPathAPI.models.validation_error_info import ValidationErrorInfo
 from UIPathAPI.models.validation_result_dto import ValidationResultDto
 from UIPathAPI.models.verify_smtp_setting_request import VerifySmtpSettingRequest
@@ -653,17 +406,13 @@ from UIPathAPI.models.webhook_dto import WebhookDto
 from UIPathAPI.models.webhook_event_dto import WebhookEventDto
 from UIPathAPI.models.webhook_event_type_dto import WebhookEventTypeDto
 from UIPathAPI.models.webhook_simple_user_dto import WebhookSimpleUserDto
-from UIPathAPI.models.webhook_task_assignment_changed_dto import (
-    WebhookTaskAssignmentChangedDto,
-)
+from UIPathAPI.models.webhook_task_assignment_changed_dto import WebhookTaskAssignmentChangedDto
 from UIPathAPI.models.webhook_task_completed_dto import WebhookTaskCompletedDto
 from UIPathAPI.models.webhook_task_created_dto import WebhookTaskCreatedDto
 from UIPathAPI.models.wrapped_environment_dto import WrappedEnvironmentDto
 from UIPathAPI.models.wrapped_job_dto import WrappedJobDto
 from UIPathAPI.models.wrapped_process_schedule_dto import WrappedProcessScheduleDto
-from UIPathAPI.models.wrapped_processing_exception_dto import (
-    WrappedProcessingExceptionDto,
-)
+from UIPathAPI.models.wrapped_processing_exception_dto import WrappedProcessingExceptionDto
 from UIPathAPI.models.wrapped_release_dto import WrappedReleaseDto
 from UIPathAPI.models.wrapped_robot_dto import WrappedRobotDto
 from UIPathAPI.models.wrapped_start_process_dto import WrappedStartProcessDto
