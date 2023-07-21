@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
+from UIPathAPI.api.oauth2_api import OAuth2Api
 from UIPathAPI.api.account_api import AccountApi
 from UIPathAPI.api.alerts_api import AlertsApi
 from UIPathAPI.api.assets_api import AssetsApi
