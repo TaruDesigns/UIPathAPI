@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import apis into api package
 from UIPathAPI.api.account_api import AccountApi
 from UIPathAPI.api.alerts_api import AlertsApi
+from UIPathAPI.api.app_tasks_api import AppTasksApi
 from UIPathAPI.api.assets_api import AssetsApi
 from UIPathAPI.api.audit_logs_api import AuditLogsApi
 from UIPathAPI.api.buckets_api import BucketsApi
@@ -51,6 +52,7 @@ from UIPathAPI.api.stats_api import StatsApi
 from UIPathAPI.api.status_api import StatusApi
 from UIPathAPI.api.task_activities_api import TaskActivitiesApi
 from UIPathAPI.api.task_catalogs_api import TaskCatalogsApi
+from UIPathAPI.api.task_definitions_api import TaskDefinitionsApi
 from UIPathAPI.api.task_forms_api import TaskFormsApi
 from UIPathAPI.api.task_notes_api import TaskNotesApi
 from UIPathAPI.api.tasks_api import TasksApi
@@ -65,6 +67,5 @@ from UIPathAPI.api.test_set_executions_api import TestSetExecutionsApi
 from UIPathAPI.api.test_set_schedules_api import TestSetSchedulesApi
 from UIPathAPI.api.test_sets_api import TestSetsApi
 from UIPathAPI.api.translations_api import TranslationsApi
-from UIPathAPI.api.user_login_attempts_api import UserLoginAttemptsApi
 from UIPathAPI.api.users_api import UsersApi
 from UIPathAPI.api.webhooks_api import WebhooksApi
