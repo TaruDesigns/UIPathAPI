@@ -5,12 +5,14 @@ All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orc
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**releases_delete_by_id**](ReleasesApi.md#releases_delete_by_id) | **DELETE** /odata/Releases({key}) | Deletes a release.
+[**releases_delete_by_key**](ReleasesApi.md#releases_delete_by_key) | **DELETE** /api/Releases/DeleteByKey | 
 [**releases_get**](ReleasesApi.md#releases_get) | **GET** /odata/Releases | Gets multiple releases.
 [**releases_get_by_id**](ReleasesApi.md#releases_get_by_id) | **GET** /odata/Releases({key}) | Gets a release by id.
 [**releases_patch_by_id**](ReleasesApi.md#releases_patch_by_id) | **PATCH** /odata/Releases({key}) | Partially updates a release.
 [**releases_post**](ReleasesApi.md#releases_post) | **POST** /odata/Releases | Creates a new release.
 [**releases_put_by_id**](ReleasesApi.md#releases_put_by_id) | **PUT** /odata/Releases({key}) | Edits a release.
 [**releases_rollback_to_previous_release_version_by_id**](ReleasesApi.md#releases_rollback_to_previous_release_version_by_id) | **POST** /odata/Releases({key})/UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersion | Reverts the package versions for the given release to the last version it had before the current one.
+[**releases_update_by_key**](ReleasesApi.md#releases_update_by_key) | **POST** /odata/Releases/UiPath.Server.Configuration.OData.UpdateByKey | Updates the package entry point for the given release.
 [**releases_update_to_latest_package_version_bulk**](ReleasesApi.md#releases_update_to_latest_package_version_bulk) | **POST** /odata/Releases/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionBulk | Updates the package versions for the given releases to the latest available.
 [**releases_update_to_latest_package_version_by_id**](ReleasesApi.md#releases_update_to_latest_package_version_by_id) | **POST** /odata/Releases({key})/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersion | Updates the package version for the given release to the latest available.
 [**releases_update_to_specific_package_version_by_id**](ReleasesApi.md#releases_update_to_specific_package_version_by_id) | **POST** /odata/Releases({key})/UiPath.Server.Configuration.OData.UpdateToSpecificPackageVersion | Updates the package version for the given release.
@@ -66,6 +68,56 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **releases_delete_by_key**
+> releases_delete_by_key(key=key)
+
+
+
+OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions: (Processes.Delete).
+
+### Example
+```python
+from __future__ import print_function
+import time
+import UIPathAPI
+from UIPathAPI.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: OAuth2
+configuration = UIPathAPI.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+key = 'key_example' # str |  (optional)
+
+try:
+    api_instance.releases_delete_by_key(key=key)
+except ApiException as e:
+    print("Exception when calling ReleasesApi->releases_delete_by_key: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **key** | [**str**](.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -418,6 +470,59 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **releases_update_by_key**
+> releases_update_by_key(body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
+
+Updates the package entry point for the given release.
+
+OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions: Processes.Edit.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import UIPathAPI
+from UIPathAPI.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: OAuth2
+configuration = UIPathAPI.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+body = UIPathAPI.ReleasesUpdateByKeyRequest() # ReleasesUpdateByKeyRequest |  (optional)
+x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
+
+try:
+    # Updates the package entry point for the given release.
+    api_instance.releases_update_by_key(body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
+except ApiException as e:
+    print("Exception when calling ReleasesApi->releases_update_by_key: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ReleasesUpdateByKeyRequest**](ReleasesUpdateByKeyRequest.md)|  | [optional] 
+ **x_uipath_organization_unit_id** | **int**| Folder/OrganizationUnit Id | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json;odata.metadata=minimal;odata.streaming=true, application/json;odata.metadata=minimal;odata.streaming=false, application/json;odata.metadata=minimal, application/json;odata.metadata=full;odata.streaming=true, application/json;odata.metadata=full;odata.streaming=false, application/json;odata.metadata=full, application/json;odata.metadata=none;odata.streaming=true, application/json;odata.metadata=none;odata.streaming=false, application/json;odata.metadata=none, application/json;odata.streaming=true, application/json;odata.streaming=false, application/json, application/json-patch+json, application/*+json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

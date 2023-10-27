@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **run_id** | **int** |  | [optional] 
 **test_case_executions** | [**list[TestCaseExecutionDto]**](TestCaseExecutionDto.md) |  | [optional] 
 **attachments** | [**list[TestSetExecutionAttachmentDto]**](TestSetExecutionAttachmentDto.md) |  | [optional] 
+**enforce_execution_order** | **bool** |  | [optional] 
 **creation_time** | **datetime** |  | [optional] 
 **creator_user_id** | **int** |  | [optional] 
 **id** | **int** |  | [optional] 

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **session_id** | **int** |  | [optional] 
 **machine_id** | **int** |  | [optional] 
 **machine_name** | **str** |  | [optional] 
+**maintenance_mode** | **str** |  | [optional] 
 **host_machine_name** | **str** |  | [optional] 
 **runtime_type** | **str** |  | [optional] 
 **machine_type** | **str** |  | [optional] 

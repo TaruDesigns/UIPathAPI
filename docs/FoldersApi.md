@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**folders_assign_machines**](FoldersApi.md#folders_assign_machines) | **POST** /odata/Folders/UiPath.Server.Configuration.OData.AssignMachines | Assigns one or more machines to a set of folders.
 [**folders_assign_users**](FoldersApi.md#folders_assign_users) | **POST** /odata/Folders/UiPath.Server.Configuration.OData.AssignUsers | Assigns one or more users to a set of folders with an optional set of roles per folder.
 [**folders_delete_by_id**](FoldersApi.md#folders_delete_by_id) | **DELETE** /odata/Folders({key}) | Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
+[**folders_delete_by_key**](FoldersApi.md#folders_delete_by_key) | **DELETE** /api/Folders/DeleteByKey | Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
 [**folders_get**](FoldersApi.md#folders_get) | **GET** /odata/Folders | Gets folders.
 [**folders_get_all_roles_for_user_by_username_and_skip_and_take**](FoldersApi.md#folders_get_all_roles_for_user_by_username_and_skip_and_take) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetAllRolesForUser(username&#x3D;&#39;{username}&#39;,skip&#x3D;{skip},take&#x3D;{take}) | Returns a page of the user-folder assignments for the input user, including the roles for each folder.  The response also includes the folders assigned to the directory groups of the user.  The distinction between the folders assigned directly to the user and the ones assigned to one of his groups  can be made via the User field of the response.  LIMITATION: If URI parameters contain special characters (eg. \\, /), use instead api/FoldersNavigation/GetAllRolesForUser endpoint.
 [**folders_get_by_id**](FoldersApi.md#folders_get_by_id) | **GET** /odata/Folders({key}) | Gets a single folder, based on its Id.
@@ -226,6 +227,57 @@ void (empty response body)
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **folders_delete_by_key**
+> folders_delete_by_key(key=key)
+
+Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
+
+OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (Units.Delete or SubFolders.Delete - Deletes any folder or only if user has SubFolders.Delete permission on the provided folder).
+
+### Example
+```python
+from __future__ import print_function
+import time
+import UIPathAPI
+from UIPathAPI.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: OAuth2
+configuration = UIPathAPI.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+key = 'key_example' # str |  (optional)
+
+try:
+    # Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
+    api_instance.folders_delete_by_key(key=key)
+except ApiException as e:
+    print("Exception when calling FoldersApi->folders_delete_by_key: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **key** | [**str**](.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

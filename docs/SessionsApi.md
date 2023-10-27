@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**sessions_get_machine_session_runtimes_by_folder_id**](SessionsApi.md#sessions_get_machine_session_runtimes_by_folder_id) | **GET** /odata/Sessions/UiPath.Server.Configuration.OData.GetMachineSessionRuntimesByFolderId(folderId&#x3D;{folderId}) | Gets machine runtime sessions by folder id
 [**sessions_get_machine_sessions_by_key**](SessionsApi.md#sessions_get_machine_sessions_by_key) | **GET** /odata/Sessions/UiPath.Server.Configuration.OData.GetMachineSessions(key&#x3D;{key}) | Get sessions for a machine
 [**sessions_get_usernames**](SessionsApi.md#sessions_get_usernames) | **GET** /odata/Sessions/UiPath.Server.Configuration.OData.GetUsernames | Gets usernames.
+[**sessions_set_maintenance_mode**](SessionsApi.md#sessions_set_maintenance_mode) | **POST** /odata/Sessions/UiPath.Server.Configuration.OData.SetMaintenanceMode | Sets the execution capabilities for a specified host
 [**sessions_toggle_machine_session_debug_mode_by_id**](SessionsApi.md#sessions_toggle_machine_session_debug_mode_by_id) | **POST** /odata/Sessions({key})/UiPath.Server.Configuration.OData.ToggleMachineSessionDebugMode | Toggles the debug mode for the specified machine session
 
 
@@ -457,6 +458,57 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **sessions_set_maintenance_mode**
+> sessions_set_maintenance_mode(body=body)
+
+Sets the execution capabilities for a specified host
+
+OAuth required scopes: OR.Robots or OR.Robots.Write.  Required permissions: Robots.Edit.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import UIPathAPI
+from UIPathAPI.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: OAuth2
+configuration = UIPathAPI.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+body = UIPathAPI.SessionMaintenanceModeParameters() # SessionMaintenanceModeParameters |  (optional)
+
+try:
+    # Sets the execution capabilities for a specified host
+    api_instance.sessions_set_maintenance_mode(body=body)
+except ApiException as e:
+    print("Exception when calling SessionsApi->sessions_set_maintenance_mode: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SessionMaintenanceModeParameters**](SessionMaintenanceModeParameters.md)|  | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json;odata.metadata=minimal;odata.streaming=true, application/json;odata.metadata=minimal;odata.streaming=false, application/json;odata.metadata=minimal, application/json;odata.metadata=full;odata.streaming=true, application/json;odata.metadata=full;odata.streaming=false, application/json;odata.metadata=full, application/json;odata.metadata=none;odata.streaming=true, application/json;odata.metadata=none;odata.streaming=false, application/json;odata.metadata=none, application/json;odata.streaming=true, application/json;odata.streaming=false, application/json, application/json-patch+json, application/*+json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

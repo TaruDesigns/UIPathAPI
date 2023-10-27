@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 **may_have_user_session** | **bool** | Specifies whether this user is allowed to have a User session (default: true) | [optional] 
 **may_have_robot_session** | **bool** | Specifies whether this user is allowed to have an Attended Robot attached (default: true) | [optional] 
 **may_have_unattended_session** | **bool** | Specifies whether this user is allowed to have an Unattended Robot attached (default: false) | [optional] 
-**bypass_basic_auth_restriction** | **bool** | Specifies whether this user bypasses the \&quot;Auth.RestrictBasicAuthentication\&quot; application setting (default: false) | [optional] 
+**bypass_basic_auth_restriction** | **bool** | DEPRECATED. Specifies whether this user bypasses the \&quot;Auth.RestrictBasicAuthentication\&quot; application setting (default: null) | [optional] 
 **may_have_personal_workspace** | **bool** | Specifies whether this user is allowed to have a Personal Workspace | [optional] 
 **update_policy** | [**UpdatePolicyDto**](UpdatePolicyDto.md) |  | [optional] 
 **account_id** | **str** |  | [optional] 

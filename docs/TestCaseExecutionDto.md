@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **has_assertions** | **bool** |  | [optional] 
 **run_id** | **int** |  | [optional] 
 **test_case_type** | **str** |  | [optional] 
+**execution_order** | **int** |  | [optional] 
 **id** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -44,6 +44,8 @@ Name | Type | Description | Notes
 **remote_control_access** | **str** |  | [optional] 
 **max_expected_running_time_seconds** | **int** | Expected running time in seconds | [optional] 
 **serverless_job_type** | **str** | The type of the serverless job, RobotJob or Generic | [optional] 
+**resume_time** | **datetime** |  | [optional] 
+**last_modification_time** | **datetime** |  | [optional] 
 **id** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

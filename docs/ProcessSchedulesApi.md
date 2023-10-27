@@ -364,7 +364,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **process_schedules_put_by_id**
-> ProcessScheduleDto process_schedules_put_by_id(key, body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
+> process_schedules_put_by_id(key, body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
 
 Edits a process schedule.
 
@@ -390,8 +390,7 @@ x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional
 
 try:
     # Edits a process schedule.
-    api_response = api_instance.process_schedules_put_by_id(key, body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
-    pprint(api_response)
+    api_instance.process_schedules_put_by_id(key, body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
 except ApiException as e:
     print("Exception when calling ProcessSchedulesApi->process_schedules_put_by_id: %s\n" % e)
 ```
@@ -406,7 +405,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ProcessScheduleDto**](ProcessScheduleDto.md)
+void (empty response body)
 
 ### Authorization
 

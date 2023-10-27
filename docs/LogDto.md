@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **robot_name** | **str** | The name of the Robot that generated the log. | [optional] 
 **host_machine_name** | **str** | The name of the machine that generated the log | [optional] 
 **machine_id** | **int** | The Id of the Machine on which the Robot that generated the log is running. | [optional] 
+**machine_key** | **str** | The Key of the Machine on which the Robot that generated the log is running. | [optional] 
 **runtime_type** | **str** | The RuntimeType of the job referenced by the JobKey field | [optional] 
 **id** | **int** |  | [optional] 
 
