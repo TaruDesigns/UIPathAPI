@@ -1,2 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-requires-python = ">=3.10"
+name = "UIPathAPI"
+version = "1.17.0"
+description = "UiPath.WebApi 17.0"
+authors = [
+    { name = "Jorge Caravaca", email = "taruelec@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+"certifi >= 2017.4.17",
+"python-dateutil >= 2.1",
+"six >= 1.10",
+"urllib3 >= 1.23",
+]
+
+[project.urls]
+homepage = "https://github.com/TaruDesigns/UIPathAPI"
