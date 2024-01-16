@@ -36,11 +36,7 @@ setup(
     description="UiPath.WebApi 17.0",
     author_email="",
     url="",
-    keywords=["Swagger", "UiPath.WebApi 17.0"],
     install_requires=REQUIRES,
     packages=find_packages(),
-    include_package_data=True,
-    long_description="""\
-    Orchestrator API  # noqa: E501
-    """
+    include_package_data=True
 )
