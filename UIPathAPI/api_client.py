@@ -588,7 +588,8 @@ class ApiClient(object):
         """
         try:
             from dateutil.parser import parse
-            return parse(string)
+            from datetime import timezone
+            return parse(string).astimezone(tz=timezone.utc) # Force Timezone to UTC to prevent "tzlocal" errors
         except ImportError:
             return string
         except ValueError:
