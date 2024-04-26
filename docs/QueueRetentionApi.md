@@ -1,4 +1,4 @@
-# UIPathAPI.QueueRetentionApi
+# uipath_orchestrator_rest.QueueRetentionApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -21,16 +21,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueRetentionApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueRetentionApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -73,16 +73,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueRetentionApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueRetentionApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -138,16 +138,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueRetentionApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueRetentionApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -195,18 +195,18 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueRetentionApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueRetentionApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.QueueRetentionSettingDto() # QueueRetentionSettingDto |  (optional)
+body = uipath_orchestrator_rest.QueueRetentionSettingDto() # QueueRetentionSettingDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

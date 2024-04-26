@@ -1,4 +1,4 @@
-# UIPathAPI.CredentialStoresApi
+# uipath_orchestrator_rest.CredentialStoresApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -8,9 +8,9 @@ Method | HTTP request | Description
 [**credential_stores_get**](CredentialStoresApi.md#credential_stores_get) | **GET** /odata/CredentialStores | Gets all Credential Stores.
 [**credential_stores_get_available_credential_store_types**](CredentialStoresApi.md#credential_stores_get_available_credential_store_types) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetAvailableCredentialStoreTypes | Gets available Credential Store types.
 [**credential_stores_get_by_id**](CredentialStoresApi.md#credential_stores_get_by_id) | **GET** /odata/CredentialStores({key}) | Gets a single Credential Store by its key.
-[**credential_stores_get_default_store_for_resource_type_by_resourcetype**](CredentialStoresApi.md#credential_stores_get_default_store_for_resource_type_by_resourcetype) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetDefaultStoreForResourceType(resourceType&#x3D;&#39;{resourceType}&#39;) | Get the default credential store for the given resource type.
-[**credential_stores_get_resources_for_credential_store_types_by_key_and_resourcetype**](CredentialStoresApi.md#credential_stores_get_resources_for_credential_store_types_by_key_and_resourcetype) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialStoreTypes(key&#x3D;{key},resourceType&#x3D;&#39;{resourceType}&#39;) | Gets available resources robots (and later assets) for a credential store.
-[**credential_stores_get_resources_for_credentials_proxy_resource_types**](CredentialStoresApi.md#credential_stores_get_resources_for_credentials_proxy_resource_types) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialsProxyResourceTypes(key&#x3D;{key},resourceType&#x3D;&#39;{resourceType}&#39;) | Gets available resources robots (and later assets) for a credential store.
+[**credential_stores_get_default_store_for_resource_type_by_resourcetype**](CredentialStoresApi.md#credential_stores_get_default_store_for_resource_type_by_resourcetype) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetDefaultStoreForResourceType(resourceType&#x3D;{resourceType}) | Get the default credential store for the given resource type.
+[**credential_stores_get_resources_for_credential_store_types_by_key_and_resourcetype**](CredentialStoresApi.md#credential_stores_get_resources_for_credential_store_types_by_key_and_resourcetype) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialStoreTypes(key&#x3D;{key},resourceType&#x3D;{resourceType}) | Gets available resources robots (and later assets) for a credential store.
+[**credential_stores_get_resources_for_credentials_proxy_resource_types**](CredentialStoresApi.md#credential_stores_get_resources_for_credentials_proxy_resource_types) | **GET** /odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialsProxyResourceTypes(key&#x3D;{key},resourceType&#x3D;{resourceType}) | Gets available resources robots (and later assets) for a credential store.
 [**credential_stores_post**](CredentialStoresApi.md#credential_stores_post) | **POST** /odata/CredentialStores | Creates a new Credential Store.
 [**credential_stores_put_by_id**](CredentialStoresApi.md#credential_stores_put_by_id) | **PUT** /odata/CredentialStores({key}) | Updates a Credential Store.
 [**credential_stores_set_default_store_for_resource_type_by_id**](CredentialStoresApi.md#credential_stores_set_default_store_for_resource_type_by_id) | **POST** /odata/CredentialStores({key})/UiPath.Server.Configuration.OData.SetDefaultStoreForResourceType | Sets a credential store as the default for the given credential type.
@@ -27,16 +27,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 force_delete = true # bool |  (optional)
 
@@ -80,16 +80,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -144,16 +144,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 proxy_id = 789 # int |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -206,16 +206,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -262,16 +262,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 resource_type = 'resource_type_example' # str | Provides the resource type for which to retrieve the default.
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -318,16 +318,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | Provides the ID of the credential store for which to retrieve resources.
 resource_type = 'resource_type_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -386,16 +386,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | Provides the ID of the credential store for which to retrieve resources.
 resource_type = 'resource_type_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -454,17 +454,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.CredentialStoreDto() # CredentialStoreDto |  (optional)
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.CredentialStoreDto() # CredentialStoreDto |  (optional)
 
 try:
     # Creates a new Credential Store.
@@ -506,18 +506,18 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.CredentialStoreDto() # CredentialStoreDto |  (optional)
+body = uipath_orchestrator_rest.CredentialStoreDto() # CredentialStoreDto |  (optional)
 
 try:
     # Updates a Credential Store.
@@ -559,18 +559,18 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.CredentialStoresApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.CredentialStoresApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | Provides the ID of the credential store to set as default.
-body = UIPathAPI.CredentialSetDefaultStoreForResourceTypeRequest() # CredentialSetDefaultStoreForResourceTypeRequest | Provides the resourceType that indicates                     the resource type for which the stores becomes default. (optional)
+body = uipath_orchestrator_rest.CredentialSetDefaultStoreForResourceTypeRequest() # CredentialSetDefaultStoreForResourceTypeRequest | Provides the resourceType that indicates                     the resource type for which the stores becomes default. (optional)
 
 try:
     # Sets a credential store as the default for the given credential type.

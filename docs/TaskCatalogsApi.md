@@ -1,4 +1,4 @@
-# UIPathAPI.TaskCatalogsApi
+# uipath_orchestrator_rest.TaskCatalogsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -26,17 +26,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: TaskCa
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskCatalogRequest() # TaskCatalogRequest | The task catalog to be created. (optional)
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskCatalogRequest() # TaskCatalogRequest | The task catalog to be created. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -84,16 +84,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: TaskCa
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | Id of the catalog to be deleted
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -137,16 +137,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Required permissions: TaskCat
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -203,16 +203,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Required permissions: TaskCat
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | id of the object
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -261,16 +261,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 id = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -319,16 +319,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 task_catalog_id = 789 # int | Id of task catalog
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -377,16 +377,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] | These represent the additional permissions over TaskCatalog.Read required in the folders the data is retrieved from; all permissions in this set must be met (optional)
 exclude_folder_id = 789 # int | The task catalogs beloging to this folder will be excluded. (optional)
 distinct_by_select = true # bool | Return distinct attributes from task catalog for select query. Select param must have exactly 1 value if this is enabled (optional)
@@ -449,17 +449,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskCatalogFoldersShareDto() # TaskCatalogFoldersShareDto | Object containing the ids of the task catalogs and the ids of the folders where it should be shared. (optional)
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskCatalogFoldersShareDto() # TaskCatalogFoldersShareDto | Object containing the ids of the task catalogs and the ids of the folders where it should be shared. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -502,18 +502,18 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: TaskCa
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TaskCatalogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TaskCatalogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | Key of the object
-body = UIPathAPI.TaskCatalogRequest() # TaskCatalogRequest | TaskCatalog to be updated (optional)
+body = uipath_orchestrator_rest.TaskCatalogRequest() # TaskCatalogRequest | TaskCatalog to be updated (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **reference** | **str** | An optional, user-specified value for queue item identification. | [optional] 
 **progress** | **str** | String field which is used to keep track of the business flow progress. | [optional] 
 **source** | **str** | The Source type of the item. | [optional] 
+**parent_operation_id** | **str** | Operation id which started the job. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

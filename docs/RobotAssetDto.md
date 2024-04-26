@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **external_name** | **str** | Contains the value of the key in the external store used to store the credentials. | [optional] 
 **credential_store_id** | **int** | The Credential Store used to store the credentials. | [optional] 
 **key_value_list** | [**list[CustomKeyValuePair]**](CustomKeyValuePair.md) | A collection of key value pairs when the type is KeyValueList. Empty when the value type is not KeyValueList. | [optional] 
+**connection_data** | [**CredentialsConnectionData**](CredentialsConnectionData.md) |  | [optional] 
 **id** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -1,4 +1,4 @@
-# UIPathAPI.PersonalWorkspacesApi
+# uipath_orchestrator_rest.PersonalWorkspacesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -22,18 +22,18 @@ OAuth authentication is not supported.  Required permissions: Units.Edit.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PersonalWorkspacesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PersonalWorkspacesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.PersonalWorkspacesConvertToFolderRequest() # PersonalWorkspacesConvertToFolderRequest |  (optional)
+body = uipath_orchestrator_rest.PersonalWorkspacesConvertToFolderRequest() # PersonalWorkspacesConvertToFolderRequest |  (optional)
 
 try:
     # Converts a Personal Workspace to a standard Folder.
@@ -75,16 +75,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: Uni
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PersonalWorkspacesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PersonalWorkspacesApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -139,16 +139,16 @@ OAuth authentication is not supported.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PersonalWorkspacesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PersonalWorkspacesApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -193,16 +193,16 @@ OAuth authentication is not supported.  Required permissions: Units.Edit and Use
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PersonalWorkspacesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PersonalWorkspacesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 
 try:
@@ -244,16 +244,16 @@ OAuth authentication is not supported.  Required permissions: Units.Edit and Use
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PersonalWorkspacesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PersonalWorkspacesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 
 try:

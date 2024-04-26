@@ -1,9 +1,9 @@
 #!usr/bin/bash
 
 # Basic Settings
-package_name="UIPathAPI"
-swagger_url="https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/swagger/v17.0/swagger.json"
-package_version="1.17.0"
+package_name="uipath_orchestrator_rest"
+swagger_url="https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/swagger/v18.0/swagger.json"
+package_version="18.0"
 
 data='{
   "options": {
@@ -26,6 +26,7 @@ unzip -q -o "$tempfolder/${package_name}_${package_version}.zip" -d $tempfolder
 
 echo "-----------Unzipped, copying to root directory----------"
 destination_path="."
+#mkdir -p $destination_path
 source_path="$tempfolder/python-client"
 cp -r "./$source_path/." "$destination_path"
 
@@ -51,8 +52,8 @@ while true; do
     $ruff_command > "$ruff_output_file"
 
     # Check if the ruff output is empty
-    if [ ! -s "$ruff_output_file" ]; then
-        break  # Exit the loop if the output is empty
+ if [ ! -s "$ruff_output_file" ] || [ "$(head -n 1 "$ruff_output_file")" = "All checks passed!" ]; then
+        break  # Exit the loop if the output is either empty or has the first line set to "All checks passed!"
     fi
     echo "----Errors found, fixing---"
     # Run the python script

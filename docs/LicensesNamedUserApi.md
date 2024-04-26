@@ -1,10 +1,10 @@
-# UIPathAPI.LicensesNamedUserApi
+# uipath_orchestrator_rest.LicensesNamedUserApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**licenses_named_user_get_licenses_named_user_by_robottype**](LicensesNamedUserApi.md#licenses_named_user_get_licenses_named_user_by_robottype) | **GET** /odata/LicensesNamedUser/UiPath.Server.Configuration.OData.GetLicensesNamedUser(robotType&#x3D;&#39;{robotType}&#39;) | Gets named-user licenses.
+[**licenses_named_user_get_licenses_named_user_by_robottype**](LicensesNamedUserApi.md#licenses_named_user_get_licenses_named_user_by_robottype) | **GET** /odata/LicensesNamedUser/UiPath.Server.Configuration.OData.GetLicensesNamedUser(robotType&#x3D;{robotType}) | Gets named-user licenses.
 
 
 # **licenses_named_user_get_licenses_named_user_by_robottype**
@@ -18,16 +18,16 @@ OAuth required scopes: OR.License or OR.License.Read.  Required permissions: Lic
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LicensesNamedUserApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LicensesNamedUserApi(uipath_orchestrator_rest.ApiClient(configuration))
 robot_type = 'robot_type_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)

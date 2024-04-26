@@ -3,15 +3,15 @@ requires = ["setuptools", "setuptools_scm", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "UIPathAPI"
-version = "1.17.0"
-description = "UiPath.WebApi 17.0"
+name = "uipath_orchestrator_rest"
+version = "1.17.1"
+description = "UiPath Orchestrator REST API Client 17.0"
 authors = [
     { name = "Jorge Caravaca", email = "taruelec@gmail.com" }
 ]
 requires-python = ">=3.8"
 dependencies = [
-"certifi >= 2017.4.17",
+"certifi >= 2024",
 "python-dateutil >= 2.1",
 "six >= 1.10",
 "urllib3 >= 1.23",

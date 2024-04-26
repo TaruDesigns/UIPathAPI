@@ -1,4 +1,4 @@
-# UIPathAPI.QueuesApi
+# uipath_orchestrator_rest.QueuesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -21,17 +21,17 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueuesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.AddQueueItemRequest() # AddQueueItemRequest |  (optional)
+api_instance = uipath_orchestrator_rest.QueuesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.AddQueueItemRequest() # AddQueueItemRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **queues_bulk_add_queue_items**
-> BulkOperationResponseDtoOfFailedQueueItemDto queues_bulk_add_queue_items(body, expand=expand, select=select, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
+> BulkOperationResponseDtoOfFailedQueueItemDto queues_bulk_add_queue_items(body=body, expand=expand, select=select, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
 
 Bulk adds queue items
 
@@ -79,24 +79,24 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueuesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.BulkAddQueueItemsRequest() # BulkAddQueueItemsRequest | 
+api_instance = uipath_orchestrator_rest.QueuesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.BulkAddQueueItemsRequest() # BulkAddQueueItemsRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
     # Bulk adds queue items
-    api_response = api_instance.queues_bulk_add_queue_items(body, expand=expand, select=select, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
+    api_response = api_instance.queues_bulk_add_queue_items(body=body, expand=expand, select=select, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling QueuesApi->queues_bulk_add_queue_items: %s\n" % e)
@@ -106,7 +106,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**BulkAddQueueItemsRequest**](BulkAddQueueItemsRequest.md)|  | 
+ **body** | [**BulkAddQueueItemsRequest**](BulkAddQueueItemsRequest.md)|  | [optional] 
  **expand** | **str**| Indicates the related entities to be represented inline. The maximum depth is 2. | [optional] 
  **select** | **str**| Limits the properties returned in the result. | [optional] 
  **x_uipath_organization_unit_id** | **int**| Folder/OrganizationUnit Id | [optional] 
@@ -137,18 +137,18 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueuesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueuesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.QueueSetTransactionResultRequest() # QueueSetTransactionResultRequest |  (optional)
+body = uipath_orchestrator_rest.QueueSetTransactionResultRequest() # QueueSetTransactionResultRequest |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -192,17 +192,17 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueuesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.QueuesStartTransactionRequest() # QueuesStartTransactionRequest |  (optional)
+api_instance = uipath_orchestrator_rest.QueuesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.QueuesStartTransactionRequest() # QueuesStartTransactionRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)

@@ -1,4 +1,4 @@
-# UIPathAPI.GenericTasksApi
+# uipath_orchestrator_rest.GenericTasksApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -23,17 +23,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: Tasks.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskCompletionRequest() # TaskCompletionRequest | TaskCompletionRequest (optional)
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskCompletionRequest() # TaskCompletionRequest | TaskCompletionRequest (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -76,17 +76,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: Tasks.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskCreateRequest() # TaskCreateRequest | The task to be created. (optional)
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskCreateRequest() # TaskCreateRequest | The task to be created. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -130,16 +130,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Required permissions: Tasks.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 task_id = 789 # int | Task id (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -184,17 +184,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: Tasks.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskSaveAndReassignmentRequest() # TaskSaveAndReassignmentRequest | TaskSaveAndReassignmentRequest (optional)
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskSaveAndReassignmentRequest() # TaskSaveAndReassignmentRequest | TaskSaveAndReassignmentRequest (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -237,17 +237,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: Tasks.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskDataSaveRequest() # TaskDataSaveRequest | TaskDataSaveRequest (optional)
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskDataSaveRequest() # TaskDataSaveRequest | TaskDataSaveRequest (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -290,17 +290,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Required permissions: Tasks.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.GenericTasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TaskTagsSaveRequest() # TaskTagsSaveRequest | TaskTagsSaveRequest (optional)
+api_instance = uipath_orchestrator_rest.GenericTasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TaskTagsSaveRequest() # TaskTagsSaveRequest | TaskTagsSaveRequest (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

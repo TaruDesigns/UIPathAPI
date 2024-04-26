@@ -1,4 +1,4 @@
-# UIPathAPI.QueueProcessingRecordsApi
+# uipath_orchestrator_rest.QueueProcessingRecordsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -19,16 +19,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueProcessingRecordsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueProcessingRecordsApi(uipath_orchestrator_rest.ApiClient(configuration))
 days_no = 56 # int | The number of days to go back from the present moment when calculating the report. If it is 0 the report will be computed for the last hour.
 queue_definition_id = 789 # int | The Id of the queue for which the report is computed.
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -85,16 +85,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueProcessingRecordsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueProcessingRecordsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)

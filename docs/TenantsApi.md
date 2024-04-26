@@ -1,4 +1,4 @@
-# UIPathAPI.TenantsApi
+# uipath_orchestrator_rest.TenantsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -23,16 +23,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
 
 try:
@@ -74,16 +74,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
 skip_last_login_time = false # bool | Skips computation of last login time for an improved performance (optional) (default to false)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -140,16 +140,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -196,18 +196,18 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
-body = UIPathAPI.TenantDto() # TenantDto |  (optional)
+body = uipath_orchestrator_rest.TenantDto() # TenantDto |  (optional)
 
 try:
     # Partially updates a tenant
@@ -249,17 +249,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TenantDto() # TenantDto |  (optional)
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TenantDto() # TenantDto |  (optional)
 
 try:
     # Creates a tenant.
@@ -301,17 +301,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TenantsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TenantSetActiveRequest() # TenantSetActiveRequest |  (optional)
+api_instance = uipath_orchestrator_rest.TenantsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TenantSetActiveRequest() # TenantSetActiveRequest |  (optional)
 
 try:
     # Toggles the active status of tenants

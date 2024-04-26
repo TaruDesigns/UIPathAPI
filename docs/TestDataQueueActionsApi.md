@@ -1,4 +1,4 @@
-# UIPathAPI.TestDataQueueActionsApi
+# uipath_orchestrator_rest.TestDataQueueActionsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -24,17 +24,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestDataQueueAddItemDto() # TestDataQueueAddItemDto | QueueName: the test data queue name; Content: the item content (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestDataQueueAddItemDto() # TestDataQueueAddItemDto | QueueName: the test data queue name; Content: the item content (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -78,17 +78,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestDataQueueBulkAddItemsDto() # TestDataQueueBulkAddItemsDto | QueueName: the test data queue name; Items: an array of item content (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestDataQueueBulkAddItemsDto() # TestDataQueueBulkAddItemsDto | QueueName: the test data queue name; Items: an array of item content (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -132,16 +132,16 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 queue_name = 'queue_name_example' # str | The name of the test data queue (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -185,17 +185,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = [UIPathAPI.list[int]()] # list[int] | The Ids of the test data queue items (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = [uipath_orchestrator_rest.list[int]()] # list[int] | The Ids of the test data queue items (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -238,17 +238,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestDataQueueGetNextItemDto() # TestDataQueueGetNextItemDto | QueueName:the test data queue name; SetConsumed: Whether to set the item's IsConsumed flag as true or false (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestDataQueueGetNextItemDto() # TestDataQueueGetNextItemDto | QueueName:the test data queue name; SetConsumed: Whether to set the item's IsConsumed flag as true or false (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -292,17 +292,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestDataQueueSetAllItemsConsumedDto() # TestDataQueueSetAllItemsConsumedDto | QueueName: the name of the test data queue; IsConsumed: the value to be set on the items IsConsumed flag (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestDataQueueSetAllItemsConsumedDto() # TestDataQueueSetAllItemsConsumedDto | QueueName: the name of the test data queue; IsConsumed: the value to be set on the items IsConsumed flag (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -345,17 +345,17 @@ OAuth required scopes: OR.TestDataQueues or OR.TestDataQueues.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestDataQueueActionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestDataQueueSetItemsConsumedDto() # TestDataQueueSetItemsConsumedDto | ItemIds: the list of item ids for which to set the IsConsumed flag; IsConsumed: the value to be set on the items IsConsumed flag (optional)
+api_instance = uipath_orchestrator_rest.TestDataQueueActionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestDataQueueSetItemsConsumedDto() # TestDataQueueSetItemsConsumedDto | ItemIds: the list of item ids for which to set the IsConsumed flag; IsConsumed: the value to be set on the items IsConsumed flag (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

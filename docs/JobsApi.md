@@ -1,4 +1,4 @@
-# UIPathAPI.JobsApi
+# uipath_orchestrator_rest.JobsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -27,16 +27,16 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Vie
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -93,16 +93,16 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Read.  Required permissions: Jobs.View
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; all permissions in this set must be met (optional)
 at_least_one_permissions = ['at_least_one_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; at least one permission in this set must be met (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -163,16 +163,16 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Read.  Required permissions: (Jobs.Vie
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -221,17 +221,17 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Cre
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.RestartJobRequest() # RestartJobRequest | The specified job id. (optional)
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.RestartJobRequest() # RestartJobRequest | The specified job id. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -279,17 +279,17 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Edi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ResumeJobRequest() # ResumeJobRequest | The specified job key. (optional)
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ResumeJobRequest() # ResumeJobRequest | The specified job key. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -337,17 +337,17 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Cre
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.StartJobsRequest() # StartJobsRequest | StartInfo - The information required to register the new jobs. (optional)
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.StartJobsRequest() # StartJobsRequest | StartInfo - The information required to register the new jobs. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -401,18 +401,18 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Edi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The specified job's Id.
-body = UIPathAPI.StopJobRequest() # StopJobRequest | Strategy - States whether a job should be soft stopped or killed immediately. (optional)
+body = uipath_orchestrator_rest.StopJobRequest() # StopJobRequest | Strategy - States whether a job should be soft stopped or killed immediately. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -456,17 +456,17 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Edi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.StopJobsRequest() # StopJobsRequest | JobIds - The ids for the jobs to be canceled or terminated;              Strategy - States whether a job should be soft stopped or killed immediately. (optional)
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.StopJobsRequest() # StopJobsRequest | JobIds - The ids for the jobs to be canceled or terminated;              Strategy - States whether a job should be soft stopped or killed immediately. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -509,17 +509,17 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: Jobs.Cre
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.StartJobsRequest() # StartJobsRequest | StartInfo - The same input which would be used to start a new job. (optional)
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.StartJobsRequest() # StartJobsRequest | StartInfo - The same input which would be used to start a new job. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -567,16 +567,16 @@ OAuth required scopes: OR.Jobs or OR.Jobs.Write.  Required permissions: (Jobs.Vi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.JobsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.JobsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)

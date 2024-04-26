@@ -1,4 +1,4 @@
-# UIPathAPI.TestSetSchedulesApi
+# uipath_orchestrator_rest.TestSetSchedulesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -23,16 +23,16 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Write.  Requir
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | ID of the test set execution schedule to be deleted
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -76,16 +76,16 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Read.  Require
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -142,16 +142,16 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Read.  Require
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -200,17 +200,17 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Write.  Requir
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestSetScheduleDto() # TestSetScheduleDto |  (optional)
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestSetScheduleDto() # TestSetScheduleDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -254,18 +254,18 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Write.  Requir
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | ID of the test set execution schedule to be updated
-body = UIPathAPI.TestSetScheduleDto() # TestSetScheduleDto | Update information (optional)
+body = uipath_orchestrator_rest.TestSetScheduleDto() # TestSetScheduleDto | Update information (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -310,17 +310,17 @@ OAuth required scopes: OR.TestSetSchedules or OR.TestSetSchedules.Write.  Requir
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetSchedulesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestSetSchedulesEnabledRequest() # TestSetSchedulesEnabledRequest | <para />enabled: if true the test set schedules will be enabled, if false they will be disabled.              <para />scheduleIds: the ids of the test set schedules to be enabled or disabled. (optional)
+api_instance = uipath_orchestrator_rest.TestSetSchedulesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestSetSchedulesEnabledRequest() # TestSetSchedulesEnabledRequest | <para />enabled: if true the test set schedules will be enabled, if false they will be disabled.              <para />scheduleIds: the ids of the test set schedules to be enabled or disabled. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)

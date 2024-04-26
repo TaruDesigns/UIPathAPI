@@ -1,4 +1,4 @@
-# UIPathAPI.RobotLogsApi
+# uipath_orchestrator_rest.RobotLogsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -7,7 +7,6 @@ Method | HTTP request | Description
 [**robot_logs_export**](RobotLogsApi.md#robot_logs_export) | **POST** /odata/RobotLogs/UiPath.Server.Configuration.OData.Export | Requests a CSV export of filtered items.
 [**robot_logs_get**](RobotLogsApi.md#robot_logs_get) | **GET** /odata/RobotLogs | Gets the robot logs.
 [**robot_logs_get_total_count**](RobotLogsApi.md#robot_logs_get_total_count) | **GET** /odata/RobotLogs/UiPath.Server.Configuration.OData.GetTotalCount | Gets the total count of robot logs.  This might be different than the size of the count returned by GetRobotLogs which  is limited by the max_result_window parameter for an Elasticsearch source.
-[**robot_logs_reports**](RobotLogsApi.md#robot_logs_reports) | **GET** /odata/RobotLogs/UiPath.Server.Configuration.OData.Reports | Reports.
 
 
 # **robot_logs_export**
@@ -21,16 +20,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissio
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RobotLogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RobotLogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -87,16 +86,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RobotLogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RobotLogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -153,16 +152,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RobotLogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RobotLogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -205,74 +204,6 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **robot_logs_reports**
-> file robot_logs_reports(file_name_subject=file_name_subject, expand=expand, filter=filter, select=select, orderby=orderby, top=top, skip=skip, count=count, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
-
-Reports.
-
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permissions: Logs.View. DEPRECATED:  Please user other means to retrieve such reports: https://docs.uipath.com/orchestrator/automation-cloud/latest/release-notes/release-notes-june-2023#deprecation-of-reports-endpoints. This endpoint will be removed in future releases. Please refer to https://docs.uipath.com/orchestrator/reference
-
-### Example
-```python
-from __future__ import print_function
-import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
-from pprint import pprint
-
-# Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# create an instance of the API class
-api_instance = UIPathAPI.RobotLogsApi(UIPathAPI.ApiClient(configuration))
-file_name_subject = 'file_name_subject_example' # str |  (optional)
-expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
-filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
-select = 'select_example' # str | Limits the properties returned in the result. (optional)
-orderby = 'orderby_example' # str | Specifies the order in which items are returned. The maximum number of expressions is 5. (optional)
-top = 56 # int | Limits the number of items returned from a collection. The maximum value is 1000. (optional)
-skip = 56 # int | Excludes the specified number of items of the queried collection from the result. (optional)
-count = true # bool | Indicates whether the total count of items within a collection are returned in the result. (optional)
-x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
-
-try:
-    # Reports.
-    api_response = api_instance.robot_logs_reports(file_name_subject=file_name_subject, expand=expand, filter=filter, select=select, orderby=orderby, top=top, skip=skip, count=count, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RobotLogsApi->robot_logs_reports: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **file_name_subject** | **str**|  | [optional] 
- **expand** | **str**| Indicates the related entities to be represented inline. The maximum depth is 2. | [optional] 
- **filter** | **str**| Restricts the set of items returned. The maximum number of expressions is 100. | [optional] 
- **select** | **str**| Limits the properties returned in the result. | [optional] 
- **orderby** | **str**| Specifies the order in which items are returned. The maximum number of expressions is 5. | [optional] 
- **top** | **int**| Limits the number of items returned from a collection. The maximum value is 1000. | [optional] 
- **skip** | **int**| Excludes the specified number of items of the queried collection from the result. | [optional] 
- **count** | **bool**| Indicates whether the total count of items within a collection are returned in the result. | [optional] 
- **x_uipath_organization_unit_id** | **int**| Folder/OrganizationUnit Id | [optional] 
-
-### Return type
-
-[**file**](file.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

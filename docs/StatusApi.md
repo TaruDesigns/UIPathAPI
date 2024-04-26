@@ -1,4 +1,4 @@
-# UIPathAPI.StatusApi
+# uipath_orchestrator_rest.StatusApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -17,12 +17,12 @@ Returns whether the current endpoint should be serving traffic
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatusApi()
+api_instance = uipath_orchestrator_rest.StatusApi()
 
 try:
     # Returns whether the current endpoint should be serving traffic
@@ -60,16 +60,16 @@ Required permissions: Webhooks.Create or Webhooks.Edit.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatusApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatusApi(uipath_orchestrator_rest.ApiClient(configuration))
 url = 'url_example' # str |  (optional)
 
 try:

@@ -1,4 +1,4 @@
-# UIPathAPI.StatsApi
+# uipath_orchestrator_rest.StatsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -22,16 +22,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatsApi(uipath_orchestrator_rest.ApiClient(configuration))
 tenant_id = 56 # int | The Tenant's Id - can be used when authenticated as Host (optional)
 days = 56 # int | Number of reported license usage days (optional)
 
@@ -76,16 +76,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Requires authentica
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Gets the total number of various entities registered in Orchestrator
@@ -124,16 +124,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Gets the total number of jobs aggregated by Job State
@@ -172,16 +172,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatsApi(uipath_orchestrator_rest.ApiClient(configuration))
 tenant_id = 56 # int | The Tenant's Id - can be used when authenticated as Host (optional)
 days = 56 # int | Number of reported license usage days (optional)
 
@@ -226,16 +226,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.StatsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.StatsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Gets the total number of robots aggregated by Robot State

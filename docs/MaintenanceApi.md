@@ -1,4 +1,4 @@
-# UIPathAPI.MaintenanceApi
+# uipath_orchestrator_rest.MaintenanceApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -20,16 +20,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.MaintenanceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.MaintenanceApi(uipath_orchestrator_rest.ApiClient(configuration))
 tenant_id = 56 # int |  (optional)
 
 try:
@@ -71,16 +71,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.MaintenanceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.MaintenanceApi(uipath_orchestrator_rest.ApiClient(configuration))
 tenant_id = 56 # int |  (optional)
 
 try:
@@ -123,16 +123,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.MaintenanceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.MaintenanceApi(uipath_orchestrator_rest.ApiClient(configuration))
 phase = 'phase_example' # str | Phase - UiPath.Orchestrator.DataContracts.MaintenanceState.Draining or UiPath.Orchestrator.DataContracts.MaintenanceState.Suspended (optional)
 force = false # bool | Whether to ignore errors during transition (optional) (default to false)
 kill_jobs = false # bool | Whether to force-kill running jobs when transitioning to UiPath.Orchestrator.DataContracts.MaintenanceState.Suspended (optional) (default to false)

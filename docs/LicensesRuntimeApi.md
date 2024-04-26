@@ -1,11 +1,11 @@
-# UIPathAPI.LicensesRuntimeApi
+# uipath_orchestrator_rest.LicensesRuntimeApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**licenses_runtime_get_licenses_runtime_by_robottype**](LicensesRuntimeApi.md#licenses_runtime_get_licenses_runtime_by_robottype) | **GET** /odata/LicensesRuntime/UiPath.Server.Configuration.OData.GetLicensesRuntime(robotType&#x3D;&#39;{robotType}&#39;) | Gets runtime licenses.
-[**licenses_runtime_toggle_enabled_by_key**](LicensesRuntimeApi.md#licenses_runtime_toggle_enabled_by_key) | **POST** /odata/LicensesRuntime(&#39;{key}&#39;)/UiPath.Server.Configuration.OData.ToggleEnabled | Toggles machine licensing on/off.
+[**licenses_runtime_get_licenses_runtime_by_robottype**](LicensesRuntimeApi.md#licenses_runtime_get_licenses_runtime_by_robottype) | **GET** /odata/LicensesRuntime/UiPath.Server.Configuration.OData.GetLicensesRuntime(robotType&#x3D;{robotType}) | Gets runtime licenses.
+[**licenses_runtime_toggle_enabled_by_key**](LicensesRuntimeApi.md#licenses_runtime_toggle_enabled_by_key) | **POST** /odata/LicensesRuntime({key})/UiPath.Server.Configuration.OData.ToggleEnabled | Toggles machine licensing on/off.
 
 
 # **licenses_runtime_get_licenses_runtime_by_robottype**
@@ -19,16 +19,16 @@ OAuth required scopes: OR.License or OR.License.Read.  Required permissions: Lic
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LicensesRuntimeApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LicensesRuntimeApi(uipath_orchestrator_rest.ApiClient(configuration))
 robot_type = 'robot_type_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -85,18 +85,18 @@ OAuth required scopes: OR.License or OR.License.Write.  Required permissions: Ma
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LicensesRuntimeApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LicensesRuntimeApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
-body = UIPathAPI.LicensesToggleEnabledRequest() # LicensesToggleEnabledRequest |  (optional)
+body = uipath_orchestrator_rest.LicensesToggleEnabledRequest() # LicensesToggleEnabledRequest |  (optional)
 
 try:
     # Toggles machine licensing on/off.

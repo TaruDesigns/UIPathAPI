@@ -1,4 +1,4 @@
-# UIPathAPI.HostLicensesApi
+# uipath_orchestrator_rest.HostLicensesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -30,16 +30,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 
 try:
@@ -81,17 +81,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.LicenseRequest() # LicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.LicenseRequest() # LicenseRequest |  (optional)
 
 try:
     # Activate the license for the host
@@ -132,17 +132,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.DeactivateLicenseRequest() # DeactivateLicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.DeactivateLicenseRequest() # DeactivateLicenseRequest |  (optional)
 
 try:
     # Deactivate the license for the host
@@ -183,16 +183,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 
 try:
@@ -234,17 +234,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.HostDeleteTenantLicenseRequest() # HostDeleteTenantLicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.HostDeleteTenantLicenseRequest() # HostDeleteTenantLicenseRequest |  (optional)
 
 try:
     # Deletes a tenant license based on its key.
@@ -285,16 +285,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -349,16 +349,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -405,17 +405,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.DeactivateLicenseRequest() # DeactivateLicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.DeactivateLicenseRequest() # DeactivateLicenseRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -461,17 +461,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.LicenseRequest() # LicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.LicenseRequest() # LicenseRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -517,16 +517,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Host only. 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 tenant_id = 56 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -573,17 +573,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.HostSetTenantLicenseRequest() # HostSetTenantLicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.HostSetTenantLicenseRequest() # HostSetTenantLicenseRequest |  (optional)
 
 try:
     # Sets the license for a specific tenant
@@ -624,16 +624,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Update the license for the host
@@ -671,16 +671,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Host only.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.HostLicensesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.HostLicensesApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)

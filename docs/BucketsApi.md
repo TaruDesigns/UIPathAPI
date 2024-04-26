@@ -1,4 +1,4 @@
-# UIPathAPI.BucketsApi
+# uipath_orchestrator_rest.BucketsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -31,16 +31,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -84,16 +84,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 path = 'path_example' # str | The BlobFile full path (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -139,16 +139,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -205,16 +205,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Requires au
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 exclude_folder_id = 789 # int |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -273,16 +273,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -331,16 +331,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 directory = 'directory_example' # str | The directory path (optional)
 file_name_glob = 'file_name_glob_example' # str | Directory listing filter (optional)
@@ -403,16 +403,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 path = 'path_example' # str | The BlobFile full path (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -463,16 +463,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 directory = 'directory_example' # str | The directory path (optional)
 recursive = false # bool | Recurse subdirectories (flat view) (optional) (default to false)
@@ -537,16 +537,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Requires au
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 id = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -595,16 +595,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 path = 'path_example' # str | The BlobFile full path (optional)
 expiry_in_minutes = 0 # int | URL expiration time (optional) (default to 0)
@@ -657,16 +657,16 @@ OAuth required scopes: OR.Administration or OR.Administration.Read.  Required pe
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The Bucket Id
 path = 'path_example' # str | The BlobFile full path (optional)
 expiry_in_minutes = 0 # int | URL Expiration time (optional) (default to 0)
@@ -721,17 +721,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.BucketDto() # BucketDto |  (optional)
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.BucketDto() # BucketDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -775,18 +775,18 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Required p
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.BucketDto() # BucketDto |  (optional)
+body = uipath_orchestrator_rest.BucketDto() # BucketDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -831,17 +831,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Requires a
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.BucketsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.BucketFoldersShareDto() # BucketFoldersShareDto | Object containing the ids of the buckets and the ids of the folders where they should be shared. (optional)
+api_instance = uipath_orchestrator_rest.BucketsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.BucketFoldersShareDto() # BucketFoldersShareDto | Object containing the ids of the buckets and the ids of the folders where they should be shared. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

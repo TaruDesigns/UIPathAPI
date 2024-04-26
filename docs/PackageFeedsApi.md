@@ -1,4 +1,4 @@
-# UIPathAPI.PackageFeedsApi
+# uipath_orchestrator_rest.PackageFeedsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -18,16 +18,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Requires authenticati
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.PackageFeedsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.PackageFeedsApi(uipath_orchestrator_rest.ApiClient(configuration))
 folder_id = 789 # int |  (optional)
 
 try:

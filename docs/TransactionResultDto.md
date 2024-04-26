@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **output** | **dict(str, object)** | A collection of key value pairs containing custom data resulted after successful processing. | [optional] 
 **analytics** | **dict(str, object)** | A collection of key value pairs containing custom data for further analytics processing. | [optional] 
 **progress** | **str** | String field which is used to keep track of the business flow progress. | [optional] 
+**operation_id** | **str** | The operation id which finished the queue item. Will be saved only if queue item is in final state | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,4 +1,4 @@
-# UIPathAPI.FoldersApi
+# uipath_orchestrator_rest.FoldersApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**folders_delete_by_id**](FoldersApi.md#folders_delete_by_id) | **DELETE** /odata/Folders({key}) | Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
 [**folders_delete_by_key**](FoldersApi.md#folders_delete_by_key) | **DELETE** /api/Folders/DeleteByKey | Deletes a folder. Succeeds only if no entities or user associations  exist in this folder or any of its descendants.
 [**folders_get**](FoldersApi.md#folders_get) | **GET** /odata/Folders | Gets folders.
-[**folders_get_all_roles_for_user_by_username_and_skip_and_take**](FoldersApi.md#folders_get_all_roles_for_user_by_username_and_skip_and_take) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetAllRolesForUser(username&#x3D;&#39;{username}&#39;,skip&#x3D;{skip},take&#x3D;{take}) | Returns a page of the user-folder assignments for the input user, including the roles for each folder.  The response also includes the folders assigned to the directory groups of the user.  The distinction between the folders assigned directly to the user and the ones assigned to one of his groups  can be made via the User field of the response.  LIMITATION: If URI parameters contain special characters (eg. \\, /), use instead api/FoldersNavigation/GetAllRolesForUser endpoint.
+[**folders_get_all_roles_for_user_by_username_and_skip_and_take**](FoldersApi.md#folders_get_all_roles_for_user_by_username_and_skip_and_take) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetAllRolesForUser(username&#x3D;{username},skip&#x3D;{skip},take&#x3D;{take}) | Returns a page of the user-folder assignments for the input user, including the roles for each folder.  The response also includes the folders assigned to the directory groups of the user.  The distinction between the folders assigned directly to the user and the ones assigned to one of his groups  can be made via the User field of the response.  LIMITATION: If URI parameters contain special characters (eg. \\, /), use instead api/FoldersNavigation/GetAllRolesForUser endpoint.
 [**folders_get_by_id**](FoldersApi.md#folders_get_by_id) | **GET** /odata/Folders({key}) | Gets a single folder, based on its Id.
 [**folders_get_by_key_by_identifier**](FoldersApi.md#folders_get_by_key_by_identifier) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetByKey(identifier&#x3D;{identifier}) | Gets a single folder, based on its Key.
 [**folders_get_machines_for_folder_by_key**](FoldersApi.md#folders_get_machines_for_folder_by_key) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetMachinesForFolder(key&#x3D;{key}) | Returns the machines assigned to a folder.
@@ -18,6 +18,7 @@ Method | HTTP request | Description
 [**folders_get_subfolders_with_assigned_machine**](FoldersApi.md#folders_get_subfolders_with_assigned_machine) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetSubfoldersWithAssignedMachine | Gets direct machine assignments for all subfolders of the specific folder
 [**folders_get_users_for_folder_by_key_and_includeinherited**](FoldersApi.md#folders_get_users_for_folder_by_key_and_includeinherited) | **GET** /odata/Folders/UiPath.Server.Configuration.OData.GetUsersForFolder(key&#x3D;{key},includeInherited&#x3D;{includeInherited}) | Returns the users who have access to a folder and optionally the fine-grained roles each one  has on that folder.
 [**folders_move_folder_by_folderid**](FoldersApi.md#folders_move_folder_by_folderid) | **PUT** /odata/Folders({folderId})/UiPath.Server.Configuration.OData.MoveFolder | Move a folder.
+[**folders_patch_name_description**](FoldersApi.md#folders_patch_name_description) | **PATCH** /api/Folders/PatchNameDescription | Edits a folder.
 [**folders_post**](FoldersApi.md#folders_post) | **POST** /odata/Folders | Creates a new folder.
 [**folders_put_by_id**](FoldersApi.md#folders_put_by_id) | **PUT** /odata/Folders({key}) | Edits a folder.
 [**folders_remove_machines_from_folder_by_id**](FoldersApi.md#folders_remove_machines_from_folder_by_id) | **POST** /odata/Folders({key})/UiPath.Server.Configuration.OData.RemoveMachinesFromFolder | Remove user assignment from a folder.
@@ -37,17 +38,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.FolderAssignDomainUserRequest() # FolderAssignDomainUserRequest |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderAssignDomainUserRequest() # FolderAssignDomainUserRequest |  (optional)
 
 try:
     # Assigns a directory user or group to a set of folders with an optional set of roles per folder.
@@ -88,17 +89,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.FolderAssignMachinesRequest() # FolderAssignMachinesRequest |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderAssignMachinesRequest() # FolderAssignMachinesRequest |  (optional)
 
 try:
     # Assigns one or more machines to a set of folders.
@@ -139,17 +140,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.FolderAssignUsersRequest() # FolderAssignUsersRequest |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderAssignUsersRequest() # FolderAssignUsersRequest |  (optional)
 
 try:
     # Assigns one or more users to a set of folders with an optional set of roles per folder.
@@ -190,16 +191,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 
 try:
@@ -241,16 +242,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str |  (optional)
 
 try:
@@ -292,16 +293,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -346,7 +347,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **folders_get_all_roles_for_user_by_username_and_skip_and_take**
-> UserRoleAssignmentsDto folders_get_all_roles_for_user_by_username_and_skip_and_take(username, skip, take, type=type, expand=expand, select=select)
+> UserRoleAssignmentsDto folders_get_all_roles_for_user_by_username_and_skip_and_take(username, skip, take, type=type, search_text=search_text, expand=expand, select=select)
 
 Returns a page of the user-folder assignments for the input user, including the roles for each folder.  The response also includes the folders assigned to the directory groups of the user.  The distinction between the folders assigned directly to the user and the ones assigned to one of his groups  can be made via the User field of the response.  LIMITATION: If URI parameters contain special characters (eg. \\, /), use instead api/FoldersNavigation/GetAllRolesForUser endpoint.
 
@@ -356,26 +357,27 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 username = 'username_example' # str | User name
 skip = 56 # int | 
 take = 56 # int | 
 type = 'User' # str |  (optional) (default to User)
+search_text = 'search_text_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
 try:
     # Returns a page of the user-folder assignments for the input user, including the roles for each folder.  The response also includes the folders assigned to the directory groups of the user.  The distinction between the folders assigned directly to the user and the ones assigned to one of his groups  can be made via the User field of the response.  LIMITATION: If URI parameters contain special characters (eg. \\, /), use instead api/FoldersNavigation/GetAllRolesForUser endpoint.
-    api_response = api_instance.folders_get_all_roles_for_user_by_username_and_skip_and_take(username, skip, take, type=type, expand=expand, select=select)
+    api_response = api_instance.folders_get_all_roles_for_user_by_username_and_skip_and_take(username, skip, take, type=type, search_text=search_text, expand=expand, select=select)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling FoldersApi->folders_get_all_roles_for_user_by_username_and_skip_and_take: %s\n" % e)
@@ -389,6 +391,7 @@ Name | Type | Description  | Notes
  **skip** | **int**|  | 
  **take** | **int**|  | 
  **type** | **str**|  | [optional] [default to User]
+ **search_text** | **str**|  | [optional] 
  **expand** | **str**| Indicates the related entities to be represented inline. The maximum depth is 2. | [optional] 
  **select** | **str**| Limits the properties returned in the result. | [optional] 
 
@@ -418,16 +421,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -474,16 +477,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 identifier = 'identifier_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -540,16 +543,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -606,16 +609,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Su
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 folder_id = 789 # int | Id of the folder to be moved (optional)
 target_parent_id = 789 # int | Id of the target parent (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -670,16 +673,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 root_folder_id = 789 # int |  (optional)
 machine_id = 789 # int |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -738,16 +741,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Read.  Required permissions: (Un
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 include_inherited = true # bool | If true, the response will include users inherited from ancestors
 include_alerts_enabled = false # bool | If true, the response will include alert preferences for each user (optional) (default to false)
@@ -808,16 +811,16 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 folder_id = 789 # int | Id of the folder to be moved
 target_parent_id = 789 # int | Id of the target parent (optional)
 
@@ -850,6 +853,60 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **folders_patch_name_description**
+> FolderDto folders_patch_name_description(body=body, key=key)
+
+Edits a folder.
+
+OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (Units.Edit or SubFolders.Edit - Edits any folder or edits only if user has SubFolders.Edit permission on the provided folder).
+
+### Example
+```python
+from __future__ import print_function
+import time
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
+from pprint import pprint
+
+# Configure OAuth2 access token for authorization: OAuth2
+configuration = uipath_orchestrator_rest.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
+
+# create an instance of the API class
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderUpdateNameDescriptionRequest() # FolderUpdateNameDescriptionRequest |  (optional)
+key = 'key_example' # str |  (optional)
+
+try:
+    # Edits a folder.
+    api_response = api_instance.folders_patch_name_description(body=body, key=key)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling FoldersApi->folders_patch_name_description: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**FolderUpdateNameDescriptionRequest**](FolderUpdateNameDescriptionRequest.md)|  | [optional] 
+ **key** | [**str**](.md)|  | [optional] 
+
+### Return type
+
+[**FolderDto**](FolderDto.md)
+
+### Authorization
+
+[OAuth2](../README.md#OAuth2)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **folders_post**
 > FolderDto folders_post(body=body)
 
@@ -861,17 +918,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.FolderDto() # FolderDto |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderDto() # FolderDto |  (optional)
 
 try:
     # Creates a new folder.
@@ -913,18 +970,18 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.FolderDto() # FolderDto |  (optional)
+body = uipath_orchestrator_rest.FolderDto() # FolderDto |  (optional)
 
 try:
     # Edits a folder.
@@ -967,18 +1024,18 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.RemoveMachinesFromFolderRequest() # RemoveMachinesFromFolderRequest | The Ids of the machines to remove from the folder (optional)
+body = uipath_orchestrator_rest.RemoveMachinesFromFolderRequest() # RemoveMachinesFromFolderRequest | The Ids of the machines to remove from the folder (optional)
 
 try:
     # Remove user assignment from a folder.
@@ -1020,18 +1077,18 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.RemoveUserFromFolderRequest() # RemoveUserFromFolderRequest | userId - The Id of the user to remove from the folder (optional)
+body = uipath_orchestrator_rest.RemoveUserFromFolderRequest() # RemoveUserFromFolderRequest | userId - The Id of the user to remove from the folder (optional)
 
 try:
     # Remove user assignment from a folder.
@@ -1073,17 +1130,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.FolderMachineInheritDto() # FolderMachineInheritDto |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.FolderMachineInheritDto() # FolderMachineInheritDto |  (optional)
 
 try:
     # Toggle machine propagation for a folder to all subfolders.
@@ -1124,17 +1181,17 @@ OAuth required scopes: OR.Folders or OR.Folders.Write.  Required permissions: (U
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.FoldersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.UpdateMachinesToFolderAssociationsRequest() # UpdateMachinesToFolderAssociationsRequest |  (optional)
+api_instance = uipath_orchestrator_rest.FoldersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.UpdateMachinesToFolderAssociationsRequest() # UpdateMachinesToFolderAssociationsRequest |  (optional)
 
 try:
     # Add and remove machine associations to a folder

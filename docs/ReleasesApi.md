@@ -1,4 +1,4 @@
-# UIPathAPI.ReleasesApi
+# uipath_orchestrator_rest.ReleasesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -29,16 +29,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -82,16 +82,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str |  (optional)
 
 try:
@@ -132,16 +132,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; all permissions in this set must be met (optional)
 at_least_one_permissions = ['at_least_one_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; at least one permission in this set must be met (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -202,16 +202,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -260,18 +260,18 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.ReleaseDto() # ReleaseDto |  (optional)
+body = uipath_orchestrator_rest.ReleaseDto() # ReleaseDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -315,17 +315,17 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ReleaseDto() # ReleaseDto |  (optional)
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ReleaseDto() # ReleaseDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -369,18 +369,18 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.ReleaseDto() # ReleaseDto |  (optional)
+body = uipath_orchestrator_rest.ReleaseDto() # ReleaseDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -425,16 +425,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 merge_package_tags = false # bool |  (optional) (default to false)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -485,17 +485,17 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ReleasesUpdateByKeyRequest() # ReleasesUpdateByKeyRequest |  (optional)
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ReleasesUpdateByKeyRequest() # ReleasesUpdateByKeyRequest |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -538,17 +538,17 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ReleasesUpdateToLatestPackageVersionBulkRequest() # ReleasesUpdateToLatestPackageVersionBulkRequest |  (optional)
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ReleasesUpdateToLatestPackageVersionBulkRequest() # ReleasesUpdateToLatestPackageVersionBulkRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -596,16 +596,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 merge_package_tags = false # bool | Merge process tags with the new package version tags (optional) (default to false)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -656,18 +656,18 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ReleasesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ReleasesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.ReleasesUpdateToSpecificPackageVersionRequest() # ReleasesUpdateToSpecificPackageVersionRequest | PackageVersion - The new package version. (optional)
+body = uipath_orchestrator_rest.ReleasesUpdateToSpecificPackageVersionRequest() # ReleasesUpdateToSpecificPackageVersionRequest | PackageVersion - The new package version. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)

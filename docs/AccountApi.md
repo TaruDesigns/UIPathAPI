@@ -1,4 +1,4 @@
-# UIPathAPI.AccountApi
+# uipath_orchestrator_rest.AccountApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -18,13 +18,13 @@ Authenticates the user based on user name and password. DEPRECATED:  Please user
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.AccountApi()
-body = UIPathAPI.LoginModel() # LoginModel | The login parameters. (optional)
+api_instance = uipath_orchestrator_rest.AccountApi()
+body = uipath_orchestrator_rest.LoginModel() # LoginModel | The login parameters. (optional)
 
 try:
     # Authenticates the user based on user name and password

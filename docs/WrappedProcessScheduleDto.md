@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **calendar_id** | **int** | Specify which calendar to use | [optional] 
 **release** | [**SimpleReleaseEventDto**](SimpleReleaseEventDto.md) |  | [optional] 
 **executor_robots** | [**list[SimpleRobotEventDto]**](SimpleRobotEventDto.md) | The collection of specific robots selected to be targeted by the current schedule. This collection must be empty if the start strategy is not 0 (specific robots). | [optional] 
+**machine_robots** | [**list[MachineRobotSessionDto]**](MachineRobotSessionDto.md) | The machine robots. This collection must be empty if there are no explicit machine mappings | [optional] 
 **input_arguments** | **object** | Input parameters that will be passed to each job created by this schedule. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -1,4 +1,4 @@
-# UIPathAPI.DirectoryServiceApi
+# uipath_orchestrator_rest.DirectoryServiceApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -20,16 +20,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Users.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.DirectoryServiceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.DirectoryServiceApi(uipath_orchestrator_rest.ApiClient(configuration))
 username = 'username_example' # str |  (optional)
 domain = 'domain_example' # str |  (optional)
 
@@ -74,16 +74,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: (Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.DirectoryServiceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.DirectoryServiceApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Gets domains
@@ -122,16 +122,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: (Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.DirectoryServiceApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.DirectoryServiceApi(uipath_orchestrator_rest.ApiClient(configuration))
 search_context = 'search_context_example' # str |  (optional)
 domain = 'domain_example' # str |  (optional)
 prefix = 'prefix_example' # str |  (optional)

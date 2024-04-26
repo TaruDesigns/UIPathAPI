@@ -1,4 +1,4 @@
-# UIPathAPI.SettingsApi
+# uipath_orchestrator_rest.SettingsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**settings_get**](SettingsApi.md#settings_get) | **GET** /odata/Settings | Gets the settings.
 [**settings_get_activity_settings**](SettingsApi.md#settings_get_activity_settings) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetActivitySettings | Returns Orchestrator settings used by activities
 [**settings_get_authentication_settings**](SettingsApi.md#settings_get_authentication_settings) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetAuthenticationSettings | Gets the authentication settings
-[**settings_get_by_id**](SettingsApi.md#settings_get_by_id) | **GET** /odata/Settings(&#39;{key}&#39;) | Gets a settings value based on its key.
+[**settings_get_by_id**](SettingsApi.md#settings_get_by_id) | **GET** /odata/Settings({key}) | Gets a settings value based on its key.
 [**settings_get_calendar**](SettingsApi.md#settings_get_calendar) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetCalendar | Gets custom calendar, with excluded dates in UTC, for current tenant
 [**settings_get_connection_string**](SettingsApi.md#settings_get_connection_string) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetConnectionString | Gets the connection string
 [**settings_get_deactivate_license_offline**](SettingsApi.md#settings_get_deactivate_license_offline) | **POST** /odata/Settings/UiPath.Server.Configuration.OData.GetDeactivateLicenseOffline | Deactivate the license offline for a specific tenant
@@ -20,11 +20,11 @@ Method | HTTP request | Description
 [**settings_get_languages**](SettingsApi.md#settings_get_languages) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetLanguages | Gets supported languages
 [**settings_get_license**](SettingsApi.md#settings_get_license) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetLicense | Retrieves the current license information.
 [**settings_get_license_offline**](SettingsApi.md#settings_get_license_offline) | **POST** /odata/Settings/UiPath.Server.Configuration.OData.GetLicenseOffline | Create the offline activation request for a specific tenant
-[**settings_get_secure_store_configuration_by_storetypename**](SettingsApi.md#settings_get_secure_store_configuration_by_storetypename) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetSecureStoreConfiguration(storeTypeName&#x3D;&#39;{storeTypeName}&#39;) | Gets the configuration format for a Secure store
+[**settings_get_secure_store_configuration_by_storetypename**](SettingsApi.md#settings_get_secure_store_configuration_by_storetypename) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetSecureStoreConfiguration(storeTypeName&#x3D;{storeTypeName}) | Gets the configuration format for a Secure store
 [**settings_get_timezones**](SettingsApi.md#settings_get_timezones) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetTimezones | Gets timezones.
 [**settings_get_update_settings**](SettingsApi.md#settings_get_update_settings) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetUpdateSettings | Gets the update settings
 [**settings_get_web_settings**](SettingsApi.md#settings_get_web_settings) | **GET** /odata/Settings/UiPath.Server.Configuration.OData.GetWebSettings | Returns a collection of key value pairs representing settings used by Orchestrator web client.
-[**settings_put_by_id**](SettingsApi.md#settings_put_by_id) | **PUT** /odata/Settings(&#39;{key}&#39;) | Edits a setting.
+[**settings_put_by_id**](SettingsApi.md#settings_put_by_id) | **PUT** /odata/Settings({key}) | Edits a setting.
 [**settings_set_calendar**](SettingsApi.md#settings_set_calendar) | **POST** /odata/Settings/UiPath.Server.Configuration.OData.SetCalendar | Sets custom calendar, with excluded dates in UTC, for current tenant
 [**settings_update_bulk**](SettingsApi.md#settings_update_bulk) | **POST** /odata/Settings/UiPath.Server.Configuration.OData.UpdateBulk | Updates the current settings.
 [**settings_update_license_online**](SettingsApi.md#settings_update_license_online) | **POST** /odata/Settings/UiPath.Server.Configuration.OData.UpdateLicenseOnline | Update the license for a specific tenant
@@ -44,16 +44,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 
 try:
@@ -95,17 +95,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.LicenseRequest() # LicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.LicenseRequest() # LicenseRequest |  (optional)
 
 try:
     # Activate the license for a specific tenant
@@ -146,16 +146,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Deactivate the license for a specific tenant
@@ -193,17 +193,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.SettingsDeleteBulkRequest() # SettingsDeleteBulkRequest | Settings - The collection of settings to be deleted. (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.SettingsDeleteBulkRequest() # SettingsDeleteBulkRequest | Settings - The collection of settings to be deleted. (optional)
 
 try:
     # Deletes values for the specified settings in the Tenant scope.
@@ -244,16 +244,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Removes the license
@@ -291,16 +291,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -355,16 +355,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Requires authentication
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -409,12 +409,12 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi()
+api_instance = uipath_orchestrator_rest.SettingsApi()
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -459,16 +459,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -515,16 +515,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -569,16 +569,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -623,16 +623,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -677,16 +677,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 scope = 56 # int | Scope of the configuration; 0 for Global, 1 for Robot
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -733,12 +733,12 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi()
+api_instance = uipath_orchestrator_rest.SettingsApi()
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -783,16 +783,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Requires authentication
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -837,17 +837,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.LicenseRequest() # LicenseRequest |  (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.LicenseRequest() # LicenseRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -893,16 +893,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Required permissions: S
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 store_type_name = 'store_type_name_example' # str | name of the secure store type
 proxy_id = 789 # int | id of the hosted credential store (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -957,12 +957,12 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi()
+api_instance = uipath_orchestrator_rest.SettingsApi()
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -1007,12 +1007,12 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi()
+api_instance = uipath_orchestrator_rest.SettingsApi()
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -1057,16 +1057,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Read.  Requires authentication
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -1111,18 +1111,18 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
-body = UIPathAPI.SettingsDto() # SettingsDto |  (optional)
+body = uipath_orchestrator_rest.SettingsDto() # SettingsDto |  (optional)
 
 try:
     # Edits a setting.
@@ -1165,17 +1165,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.CalendarDto() # CalendarDto |  (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.CalendarDto() # CalendarDto |  (optional)
 
 try:
     # Sets custom calendar, with excluded dates in UTC, for current tenant
@@ -1216,17 +1216,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.SettingsUpdateBulkRequest() # SettingsUpdateBulkRequest | Settings - The collection of settings to be updated. (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.SettingsUpdateBulkRequest() # SettingsUpdateBulkRequest | Settings - The collection of settings to be updated. (optional)
 
 try:
     # Updates the current settings.
@@ -1267,16 +1267,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 
 try:
     # Update the license for a specific tenant
@@ -1314,17 +1314,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Requires authenticatio
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.UpdateUserSettingRequest() # UpdateUserSettingRequest |  (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.UpdateUserSettingRequest() # UpdateUserSettingRequest |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -1370,16 +1370,16 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 
 try:
@@ -1421,17 +1421,17 @@ OAuth required scopes: OR.Settings or OR.Settings.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SettingsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.VerifySmtpSettingRequest() # VerifySmtpSettingRequest | SMTP setting parameters (optional)
+api_instance = uipath_orchestrator_rest.SettingsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.VerifySmtpSettingRequest() # VerifySmtpSettingRequest | SMTP setting parameters (optional)
 
 try:
     # Verify whether the given SMTP settings are correct or not by sending an email to a recipient.

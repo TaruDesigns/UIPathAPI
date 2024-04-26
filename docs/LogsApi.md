@@ -1,4 +1,4 @@
-# UIPathAPI.LogsApi
+# uipath_orchestrator_rest.LogsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -19,16 +19,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissio
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LogsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LogsApi(uipath_orchestrator_rest.ApiClient(configuration))
 body = NULL # object |  (optional)
 
 try:
@@ -70,17 +70,17 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissio
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LogsApi(UIPathAPI.ApiClient(configuration))
-body = [UIPathAPI.list[str]()] # list[str] | Collection of string representations of JSON objects (optional)
+api_instance = uipath_orchestrator_rest.LogsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = [uipath_orchestrator_rest.list[str]()] # list[str] | Collection of string representations of JSON objects (optional)
 
 try:
     # Inserts a collection of log entries, each in a specific JSON format.

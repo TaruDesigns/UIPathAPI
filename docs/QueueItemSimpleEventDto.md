@@ -17,7 +17,9 @@ Name | Type | Description | Notes
 **start_processing** | **datetime** | The date and time at which the item processing started. This is null if the item was not processed. | [optional] 
 **end_processing** | **datetime** | The date and time at which the item processing ended. This is null if the item was not processed. | [optional] 
 **creator_job_id** | **int** | The id for the job that created the queue item | [optional] 
+**creator_job_key** | **str** | The unique identifier for the job that created the queue item | [optional] 
 **executor_job_id** | **int** | The id for the job that processed the queue item | [optional] 
+**executor_job_key** | **str** | The unique identifier for the job that processed the queue item | [optional] 
 **creator_user_id** | **int** | The id for the user that created the queue item | [optional] 
 **risk_sla_date** | **datetime** | The RiskSla date at time which is considered as risk zone for the item to be processed. | [optional] 
 **seconds_in_previous_attempts** | **int** | The number of seconds that the last failed processing lasted. | [optional] 
@@ -35,6 +37,8 @@ Name | Type | Description | Notes
 **specific_content** | **dict(str, object)** | A collection of key value pairs containing custom data configured in the Add Queue Item activity, in UiPath Studio. | [optional] 
 **output** | **dict(str, object)** | A collection of key value pairs containing custom data resulted after successful processing. | [optional] 
 **source** | **str** | Where the queue item was created | [optional] 
+**parent_operation_id** | **str** | Operation id which added the queue item | [optional] 
+**operation_id** | **str** | Operation id which processed the queue item | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

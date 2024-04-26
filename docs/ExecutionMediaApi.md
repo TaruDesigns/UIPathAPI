@@ -1,4 +1,4 @@
-# UIPathAPI.ExecutionMediaApi
+# uipath_orchestrator_rest.ExecutionMediaApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -21,17 +21,17 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissio
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ExecutionMediaApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ExecutionMediaDeleteMediaByJobIdRequest() # ExecutionMediaDeleteMediaByJobIdRequest |  (optional)
+api_instance = uipath_orchestrator_rest.ExecutionMediaApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ExecutionMediaDeleteMediaByJobIdRequest() # ExecutionMediaDeleteMediaByJobIdRequest |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -74,16 +74,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ExecutionMediaApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ExecutionMediaApi(uipath_orchestrator_rest.ApiClient(configuration))
 job_id = 789 # int | 
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -128,16 +128,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ExecutionMediaApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ExecutionMediaApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -193,16 +193,16 @@ OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permission
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ExecutionMediaApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ExecutionMediaApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)

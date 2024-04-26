@@ -1,4 +1,4 @@
-# UIPathAPI.UsersApi
+# uipath_orchestrator_rest.UsersApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -32,18 +32,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UserAssignRolesRequest() # UserAssignRolesRequest |  (optional)
+body = uipath_orchestrator_rest.UserAssignRolesRequest() # UserAssignRolesRequest |  (optional)
 
 try:
     api_instance.users_assign_roles_by_id(key, body=body)
@@ -84,17 +84,17 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.UserChangeCultureRequest() # UserChangeCultureRequest |  (optional)
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.UserChangeCultureRequest() # UserChangeCultureRequest |  (optional)
 
 try:
     # Changes the culture for the current user
@@ -135,18 +135,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UserChangeCultureRequest() # UserChangeCultureRequest |  (optional)
+body = uipath_orchestrator_rest.UserChangeCultureRequest() # UserChangeCultureRequest |  (optional)
 
 try:
     # Changes the culture for the specified user
@@ -188,16 +188,16 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 
 try:
@@ -239,16 +239,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Users.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -303,16 +303,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -359,16 +359,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -413,16 +413,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -467,18 +467,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UserDto() # UserDto |  (optional)
+body = uipath_orchestrator_rest.UserDto() # UserDto |  (optional)
 
 try:
     # Partially updates a user.  Cannot update roles or organization units via this endpoint.
@@ -520,17 +520,17 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.UserDto() # UserDto |  (optional)
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.UserDto() # UserDto |  (optional)
 
 try:
     # Creates a new user.
@@ -572,18 +572,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UserDto() # UserDto |  (optional)
+body = uipath_orchestrator_rest.UserDto() # UserDto |  (optional)
 
 try:
     # Edits a user.
@@ -625,18 +625,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UsersSetActiveRequest() # UsersSetActiveRequest |  (optional)
+body = uipath_orchestrator_rest.UsersSetActiveRequest() # UsersSetActiveRequest |  (optional)
 
 try:
     # Activate or deactivate a user
@@ -678,18 +678,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UsersToggleOrganizationUnitRequest() # UsersToggleOrganizationUnitRequest | <para />Toggle - States whether to associate or to dissociate the organization unit with/from the user.              <para />OrganizationUnitId - The id of the organization unit to be associated/dissociated. (optional)
+body = uipath_orchestrator_rest.UsersToggleOrganizationUnitRequest() # UsersToggleOrganizationUnitRequest | <para />Toggle - States whether to associate or to dissociate the organization unit with/from the user.              <para />OrganizationUnitId - The id of the organization unit to be associated/dissociated. (optional)
 
 try:
     # Associates/dissociates the given user with/from an organization unit based on toggle parameter.
@@ -731,18 +731,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Users.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.UsersToggleRoleRequest() # UsersToggleRoleRequest | <para />Toggle - States whether to associate or to dissociate the role with/from the user.              <para />Role - The name of the role to be associated/dissociated. (optional)
+body = uipath_orchestrator_rest.UsersToggleRoleRequest() # UsersToggleRoleRequest | <para />Toggle - States whether to associate or to dissociate the role with/from the user.              <para />Role - The name of the role to be associated/dissociated. (optional)
 
 try:
     # Associates/dissociates the given user with/from a role based on toggle parameter.
@@ -784,16 +784,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Users.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.UsersApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.UsersApi(uipath_orchestrator_rest.ApiClient(configuration))
 user_ids = [56] # list[int] | The Id of the users to check
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)

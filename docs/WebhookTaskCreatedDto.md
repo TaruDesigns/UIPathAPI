@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**parent_operation_id** | **str** | The operation id which created the Task | [optional] 
 **title** | **str** |  | [optional] 
 **type** | **str** |  | [optional] 
 **priority** | **str** |  | [optional] 

@@ -1,4 +1,4 @@
-# UIPathAPI.TestSetsApi
+# uipath_orchestrator_rest.TestSetsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -22,16 +22,16 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | ID of the Test Set to delete
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -75,16 +75,16 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Read.  Required permissions: T
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetsApi(uipath_orchestrator_rest.ApiClient(configuration))
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] |  (optional)
 at_least_one_permissions = ['at_least_one_permissions_example'] # list[str] |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -145,16 +145,16 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Read.  Required permissions: T
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -203,17 +203,17 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestSetDto() # TestSetDto |  (optional)
+api_instance = uipath_orchestrator_rest.TestSetsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestSetDto() # TestSetDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -257,18 +257,18 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestSetsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestSetsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | ID of the Test Set to be updated
-body = UIPathAPI.TestSetDto() # TestSetDto | Update information (optional)
+body = uipath_orchestrator_rest.TestSetDto() # TestSetDto | Update information (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:

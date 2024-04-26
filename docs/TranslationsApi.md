@@ -1,4 +1,4 @@
-# UIPathAPI.TranslationsApi
+# uipath_orchestrator_rest.TranslationsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -16,12 +16,12 @@ Returns a json with translation resources
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = UIPathAPI.TranslationsApi()
+api_instance = uipath_orchestrator_rest.TranslationsApi()
 lang = 'lang_example' # str |  (optional)
 
 try:

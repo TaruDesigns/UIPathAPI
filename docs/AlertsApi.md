@@ -1,83 +1,36 @@
-# UIPathAPI.AlertsApi
+# uipath_orchestrator_rest.AlertsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**alerts_expand_current_user_group_alerts**](AlertsApi.md#alerts_expand_current_user_group_alerts) | **POST** /odata/Alerts/UiPath.Server.Configuration.OData.ExpandCurrentUserGroupAlerts | 
 [**alerts_get**](AlertsApi.md#alerts_get) | **GET** /odata/Alerts | Gets alerts.
 [**alerts_get_unread_count**](AlertsApi.md#alerts_get_unread_count) | **GET** /odata/Alerts/UiPath.Server.Configuration.OData.GetUnreadCount | Returns the total number of alerts, per tenant, that haven&#39;t been read by the current user.
 [**alerts_mark_as_read**](AlertsApi.md#alerts_mark_as_read) | **POST** /odata/Alerts/UiPath.Server.Configuration.OData.MarkAsRead | Marks alerts as read and returns the remaining number of unread notifications.
 [**alerts_raise_process_alert**](AlertsApi.md#alerts_raise_process_alert) | **POST** /odata/Alerts/UiPath.Server.Configuration.OData.RaiseProcessAlert | Creates a Process Alert
 
 
-# **alerts_expand_current_user_group_alerts**
-> alerts_expand_current_user_group_alerts()
-
-
-
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissions: Alerts.View.
-
-### Example
-```python
-from __future__ import print_function
-import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
-from pprint import pprint
-
-# Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# create an instance of the API class
-api_instance = UIPathAPI.AlertsApi(UIPathAPI.ApiClient(configuration))
-
-try:
-    api_instance.alerts_expand_current_user_group_alerts()
-except ApiException as e:
-    print("Exception when calling AlertsApi->alerts_expand_current_user_group_alerts: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **alerts_get**
 > ODataValueOfIEnumerableOfAlertDto alerts_get(expand=expand, filter=filter, select=select, orderby=orderby, top=top, skip=skip, count=count)
 
 Gets alerts.
 
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permissions: Alerts.View.
+OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permissions: Alerts.View. DEPRECATED:  Please refer to https://docs.uipath.com/orchestrator/reference
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.AlertsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.AlertsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -126,22 +79,22 @@ Name | Type | Description  | Notes
 
 Returns the total number of alerts, per tenant, that haven't been read by the current user.
 
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permissions: Alerts.View.
+OAuth required scopes: OR.Monitoring or OR.Monitoring.Read.  Required permissions: Alerts.View. DEPRECATED:  Please refer to https://docs.uipath.com/orchestrator/reference
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.AlertsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.AlertsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -180,23 +133,23 @@ Name | Type | Description  | Notes
 
 Marks alerts as read and returns the remaining number of unread notifications.
 
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissions: Alerts.View.
+OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissions: Alerts.View. DEPRECATED:  Please refer to https://docs.uipath.com/orchestrator/reference
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.AlertsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.AlertsMarkAsReadRequest() # AlertsMarkAsReadRequest | Collection containing the unique identifiers of the notifications that will be marked as read (optional)
+api_instance = uipath_orchestrator_rest.AlertsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.AlertsMarkAsReadRequest() # AlertsMarkAsReadRequest | Collection containing the unique identifiers of the notifications that will be marked as read (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
 
@@ -236,23 +189,23 @@ Name | Type | Description  | Notes
 
 Creates a Process Alert
 
-OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissions: Alerts.Create.
+OAuth required scopes: OR.Monitoring or OR.Monitoring.Write.  Required permissions: Alerts.Create. DEPRECATED:  Please refer to https://docs.uipath.com/orchestrator/reference
 
 ### Example
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.AlertsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.RaiseProcessAlertRequest() # RaiseProcessAlertRequest |  (optional)
+api_instance = uipath_orchestrator_rest.AlertsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.RaiseProcessAlertRequest() # RaiseProcessAlertRequest |  (optional)
 
 try:
     # Creates a Process Alert

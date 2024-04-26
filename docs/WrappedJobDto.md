@@ -24,6 +24,8 @@ Name | Type | Description | Notes
 **runtime_type** | **str** | The type of license used to run the job | [optional] 
 **process_type** | **str** | The type of process | [optional] 
 **specific_priority_value** | **int** | The priority for a job | [optional] 
+**project_key** | **str** | The project key which the job is part of | [optional] 
+**parent_operation_id** | **str** | The operation id which created the job | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

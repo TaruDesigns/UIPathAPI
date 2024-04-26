@@ -1,4 +1,4 @@
-# UIPathAPI.RolesApi
+# uipath_orchestrator_rest.RolesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -25,16 +25,16 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Roles.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
 
 try:
@@ -76,16 +76,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Roles.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -140,16 +140,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Roles.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -196,16 +196,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Roles.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | The Id of the role for which the robot ids are fetched.
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -258,16 +258,16 @@ OAuth required scopes: OR.Users or OR.Users.Read.  Required permissions: Roles.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | The Id of the role for which the associated users are placed first.
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -324,17 +324,17 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Roles.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.RoleDto() # RoleDto |  (optional)
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.RoleDto() # RoleDto |  (optional)
 
 try:
     # Creates a new role - Creating mixed roles will not be supported in 21.10
@@ -376,18 +376,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Roles.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | 
-body = UIPathAPI.RoleDto() # RoleDto |  (optional)
+body = uipath_orchestrator_rest.RoleDto() # RoleDto |  (optional)
 
 try:
     # Edits a role.
@@ -429,18 +429,18 @@ OAuth required scopes: OR.Users or OR.Users.Write.  Required permissions: Roles.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.RolesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.RolesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 56 # int | The role id.
-body = UIPathAPI.SetUsersRequest() # SetUsersRequest | <para />addedUserIds - The id of the users to be associated with the role.              <para />removedUserIds - The id of the users to be dissociated from the role. (optional)
+body = uipath_orchestrator_rest.SetUsersRequest() # SetUsersRequest | <para />addedUserIds - The id of the users to be associated with the role.              <para />removedUserIds - The id of the users to be dissociated from the role. (optional)
 
 try:
     # Associates a group of users with and dissociates another group of users from the given role.

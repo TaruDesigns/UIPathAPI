@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **alert_pending_expression** | **str** |  | [optional] 
 **alert_running_expression** | **str** |  | [optional] 
 **run_as_me** | **bool** |  | [optional] 
+**parent_operation_id** | **str** | Operation id which started the job. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

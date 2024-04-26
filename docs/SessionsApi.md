@@ -1,4 +1,4 @@
-# UIPathAPI.SessionsApi
+# uipath_orchestrator_rest.SessionsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -26,17 +26,17 @@ OAuth required scopes: OR.Robots or OR.Robots.Write.  Required permissions: Robo
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.DeleteInactiveSessionsParameters() # DeleteInactiveSessionsParameters |  (optional)
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.DeleteInactiveSessionsParameters() # DeleteInactiveSessionsParameters |  (optional)
 
 try:
     # Deletes disconnected or unresponsive sessions
@@ -77,16 +77,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: Robot
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -143,16 +143,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: (Robo
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -207,16 +207,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: Machi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 runtime_type = 'runtime_type_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -273,16 +273,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: (Mach
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 folder_id = 789 # int | 
 robot_id = 789 # int |  (optional)
 runtime_type = 'runtime_type_example' # str |  (optional)
@@ -343,16 +343,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: Machi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -409,16 +409,16 @@ OAuth required scopes: OR.Robots or OR.Robots.Read.  Required permissions: Robot
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -473,17 +473,17 @@ OAuth required scopes: OR.Robots or OR.Robots.Write.  Required permissions: Robo
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.SessionMaintenanceModeParameters() # SessionMaintenanceModeParameters |  (optional)
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.SessionMaintenanceModeParameters() # SessionMaintenanceModeParameters |  (optional)
 
 try:
     # Sets the execution capabilities for a specified host
@@ -524,18 +524,18 @@ OAuth required scopes: OR.Robots or OR.Robots.Write.  Required permissions: Robo
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.SessionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.SessionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.SessionsToggleMachineSessionDebugModeRequest() # SessionsToggleMachineSessionDebugModeRequest |  (optional)
+body = uipath_orchestrator_rest.SessionsToggleMachineSessionDebugModeRequest() # SessionsToggleMachineSessionDebugModeRequest |  (optional)
 
 try:
     # Toggles the debug mode for the specified machine session

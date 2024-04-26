@@ -1,14 +1,14 @@
-# UIPathAPI.ProcessesApi
+# uipath_orchestrator_rest.ProcessesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**processes_delete_by_id**](ProcessesApi.md#processes_delete_by_id) | **DELETE** /odata/Processes(&#39;{key}&#39;) | Deletes a package.
-[**processes_download_package_by_key**](ProcessesApi.md#processes_download_package_by_key) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.DownloadPackage(key&#x3D;&#39;{key}&#39;) | Downloads the .nupkg file of a Package.
+[**processes_delete_by_id**](ProcessesApi.md#processes_delete_by_id) | **DELETE** /odata/Processes({key}) | Deletes a package.
+[**processes_download_package_by_key**](ProcessesApi.md#processes_download_package_by_key) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.DownloadPackage(key&#x3D;{key}) | Downloads the .nupkg file of a Package.
 [**processes_get**](ProcessesApi.md#processes_get) | **GET** /odata/Processes | Gets the processes.
-[**processes_get_arguments_by_key**](ProcessesApi.md#processes_get_arguments_by_key) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.GetArguments(key&#x3D;&#39;{key}&#39;) | Get process parameters
-[**processes_get_process_versions_by_processid**](ProcessesApi.md#processes_get_process_versions_by_processid) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.GetProcessVersions(processId&#x3D;&#39;{processId}&#39;) | Returns a collection of all available versions of a given process. Allows odata query options.
+[**processes_get_arguments_by_key**](ProcessesApi.md#processes_get_arguments_by_key) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.GetArguments(key&#x3D;{key}) | Get process parameters
+[**processes_get_process_versions_by_processid**](ProcessesApi.md#processes_get_process_versions_by_processid) | **GET** /odata/Processes/UiPath.Server.Configuration.OData.GetProcessVersions(processId&#x3D;{processId}) | Returns a collection of all available versions of a given process. Allows odata query options.
 [**processes_set_arguments**](ProcessesApi.md#processes_set_arguments) | **POST** /odata/Processes/UiPath.Server.Configuration.OData.SetArguments | Saves process arguments
 [**processes_upload_package**](ProcessesApi.md#processes_upload_package) | **POST** /odata/Processes/UiPath.Server.Configuration.OData.UploadPackage | Uploads a new package or a new version of an existing package. The content of the package is sent as a .nupkg file embedded in the HTTP request.
 
@@ -24,16 +24,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 feed_id = 'feed_id_example' # str |  (optional)
 
@@ -77,16 +77,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 feed_id = 'feed_id_example' # str |  (optional)
 
@@ -131,16 +131,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 search_term = '' # str |  (optional) (default to )
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -199,16 +199,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -255,16 +255,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 process_id = 'process_id_example' # str | The Id of the process for which the versions are fetched.
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -323,17 +323,17 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ProcessesSetArgumentsRequest() # ProcessesSetArgumentsRequest |  (optional)
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ProcessesSetArgumentsRequest() # ProcessesSetArgumentsRequest |  (optional)
 
 try:
     # Saves process arguments
@@ -374,16 +374,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.ProcessesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.ProcessesApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)

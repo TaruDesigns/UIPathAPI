@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **due_date** | **datetime** | The latest date and time at which the item should be processed. If empty the item can be processed at any given time. | [optional] 
 **reference** | **str** | An optional, user-specified value for queue item identification. | [optional] 
 **reference_filter_option** | **str** | Declares the strategy used to filter the Reference value. | [optional] 
+**parent_operation_id** | **str** | Operation id which created the queue item. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

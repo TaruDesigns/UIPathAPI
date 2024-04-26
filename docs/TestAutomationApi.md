@@ -1,4 +1,4 @@
-# UIPathAPI.TestAutomationApi
+# uipath_orchestrator_rest.TestAutomationApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -30,16 +30,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_case_execution_id = 789 # int | Id for the test case execution to be canceled (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -83,16 +83,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_set_execution_id = 789 # int | Id for the test set execution to be canceled (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -136,17 +136,17 @@ OAuth required scopes: OR.TestSets or OR.TestSets.Write.  Required permissions: 
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.BuildTestSetRequestMessage() # BuildTestSetRequestMessage |  (optional)
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.BuildTestSetRequestMessage() # BuildTestSetRequestMessage |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -190,16 +190,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Read.  Requi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_case_assertion_id = 789 # int | Id of the test case assertion (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -244,16 +244,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Requires authenticati
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_case_unique_id = 'test_case_unique_id_example' # str |  (optional)
 package_identifier = 'package_identifier_example' # str |  (optional)
 
@@ -298,16 +298,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 package_identifier = 'package_identifier_example' # str |  (optional)
 version = 'version_example' # str |  (optional)
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; all permissions in this set must be met (optional)
@@ -358,16 +358,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Read.  Requi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_case_execution_attachment_id = 789 # int | Id of the test case execution attachment (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -412,17 +412,17 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestCaseExecutionAttachmentFilterDto() # TestCaseExecutionAttachmentFilterDto |  (optional)
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestCaseExecutionAttachmentFilterDto() # TestCaseExecutionAttachmentFilterDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -466,16 +466,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Read.  Requi
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_set_execution_attachment_id = 789 # int | Id of the test set execution attachment (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -520,17 +520,17 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestSetExecutionAttachmentFilterDto() # TestSetExecutionAttachmentFilterDto |  (optional)
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestSetExecutionAttachmentFilterDto() # TestSetExecutionAttachmentFilterDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -574,17 +574,17 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ReexecuteTestCasesOptionsDto() # ReexecuteTestCasesOptionsDto | A list of test case executions with corresponding input arguments and optional RobotId and MachineSessionId fields (optional)
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ReexecuteTestCasesOptionsDto() # ReexecuteTestCasesOptionsDto | A list of test case executions with corresponding input arguments and optional RobotId and MachineSessionId fields (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -628,16 +628,16 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
 test_set_id = 789 # int |  (optional)
 test_set_key = 'test_set_key_example' # str |  (optional)
 trigger_type = 'Manual' # str | Specifies how was the execution triggered (optional) (default to Manual)
@@ -686,17 +686,17 @@ OAuth required scopes: OR.TestSetExecutions or OR.TestSetExecutions.Write.  Requ
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TestAutomationApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TestSetExecutionOptionsDto() # TestSetExecutionOptionsDto | Provides options to set the BatchExecutionKey and TriggerType and override the input parameters for specific test cases (optional)
+api_instance = uipath_orchestrator_rest.TestAutomationApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TestSetExecutionOptionsDto() # TestSetExecutionOptionsDto | Provides options to set the BatchExecutionKey and TriggerType and override the input parameters for specific test cases (optional)
 test_set_id = 789 # int |  (optional)
 test_set_key = 'test_set_key_example' # str |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)

@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **app_tasks_metadata** | [**AppTasksMetadataDto**](AppTasksMetadataDto.md) |  | [optional] 
+**action_label** | **str** | App Task action label | [optional] 
 **status** | **str** | Task status | [optional] 
 **data** | **object** | Task form data json | [optional] 
 **action** | **str** | Task form action | [optional] 
@@ -21,6 +22,8 @@ Name | Type | Description | Notes
 **wait_job_key** | **str** | Key job which is waiting on this task | [optional] 
 **last_assigned_time** | **datetime** | Datetime when task was last assigned. | [optional] 
 **completion_time** | **datetime** | Datetime when task was completed. | [optional] 
+**parent_operation_id** | **str** | Operation id which created the task. | [optional] 
+**key** | **str** | The unique Task identifier. | [optional] 
 **is_deleted** | **bool** |  | [optional] 
 **deleter_user_id** | **int** |  | [optional] 
 **deletion_time** | **datetime** |  | [optional] 

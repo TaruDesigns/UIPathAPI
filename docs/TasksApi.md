@@ -1,4 +1,4 @@
-# UIPathAPI.TasksApi
+# uipath_orchestrator_rest.TasksApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -28,17 +28,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TasksAssignRequest() # TasksAssignRequest | The json containing task and user Ids for assignment. (optional)
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TasksAssignRequest() # TasksAssignRequest | The json containing task and user Ids for assignment. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -92,17 +92,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TasksDeleteRequest() # TasksDeleteRequest | The json containing list of task ids for deletion. (optional)
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TasksDeleteRequest() # TasksDeleteRequest | The json containing list of task ids for deletion. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -156,17 +156,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.EditTaskMetadataRequest() # EditTaskMetadataRequest |  (optional)
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.EditTaskMetadataRequest() # EditTaskMetadataRequest |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -209,16 +209,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -275,16 +275,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | The primary key of the Task to be retrieved.
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -333,16 +333,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -395,16 +395,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Required permissions: Tasks.V
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 organization_unit_id = 789 # int | organizationUnitId of the task
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -463,16 +463,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 event = 'event_example' # str | Operation performed on the task (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -531,16 +531,16 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
 event = 'event_example' # str | Operation performed on the task (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -599,17 +599,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TasksAssignRequest() # TasksAssignRequest | The json containing task and user Ids for reassignment. (optional)
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TasksAssignRequest() # TasksAssignRequest | The json containing task and user Ids for reassignment. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -663,17 +663,17 @@ OAuth required scopes: OR.Tasks or OR.Tasks.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.TasksApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.TasksDeleteRequest() # TasksDeleteRequest | The json containing list of task ids for un-assignments. (optional)
+api_instance = uipath_orchestrator_rest.TasksApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.TasksDeleteRequest() # TasksDeleteRequest | The json containing list of task ids for un-assignments. (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)

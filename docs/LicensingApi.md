@@ -1,4 +1,4 @@
-# UIPathAPI.LicensingApi
+# uipath_orchestrator_rest.LicensingApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -19,17 +19,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Requires a
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LicensingApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ConsumptionLicenseDto() # ConsumptionLicenseDto |  (optional)
+api_instance = uipath_orchestrator_rest.LicensingApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ConsumptionLicenseDto() # ConsumptionLicenseDto |  (optional)
 
 try:
     # Acquire license units
@@ -71,17 +71,17 @@ OAuth required scopes: OR.Administration or OR.Administration.Write.  Requires a
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LicensingApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.ConsumptionLicenseDto() # ConsumptionLicenseDto |  (optional)
+api_instance = uipath_orchestrator_rest.LicensingApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.ConsumptionLicenseDto() # ConsumptionLicenseDto |  (optional)
 
 try:
     # Release acquired license units

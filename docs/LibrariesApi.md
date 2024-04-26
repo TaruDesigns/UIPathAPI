@@ -1,13 +1,13 @@
-# UIPathAPI.LibrariesApi
+# uipath_orchestrator_rest.LibrariesApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**libraries_delete_by_id**](LibrariesApi.md#libraries_delete_by_id) | **DELETE** /odata/Libraries(&#39;{key}&#39;) | Deletes a package.
-[**libraries_download_package_by_key**](LibrariesApi.md#libraries_download_package_by_key) | **GET** /odata/Libraries/UiPath.Server.Configuration.OData.DownloadPackage(key&#x3D;&#39;{key}&#39;) | Downloads the .nupkg file of a Package.
+[**libraries_delete_by_id**](LibrariesApi.md#libraries_delete_by_id) | **DELETE** /odata/Libraries({key}) | Deletes a package.
+[**libraries_download_package_by_key**](LibrariesApi.md#libraries_download_package_by_key) | **GET** /odata/Libraries/UiPath.Server.Configuration.OData.DownloadPackage(key&#x3D;{key}) | Downloads the .nupkg file of a Package.
 [**libraries_get**](LibrariesApi.md#libraries_get) | **GET** /odata/Libraries | Gets the library packages.
-[**libraries_get_versions_by_packageid**](LibrariesApi.md#libraries_get_versions_by_packageid) | **GET** /odata/Libraries/UiPath.Server.Configuration.OData.GetVersions(packageId&#x3D;&#39;{packageId}&#39;) | Returns a collection of all available versions of a given package. Allows odata query options.
+[**libraries_get_versions_by_packageid**](LibrariesApi.md#libraries_get_versions_by_packageid) | **GET** /odata/Libraries/UiPath.Server.Configuration.OData.GetVersions(packageId&#x3D;{packageId}) | Returns a collection of all available versions of a given package. Allows odata query options.
 [**libraries_upload_package**](LibrariesApi.md#libraries_upload_package) | **POST** /odata/Libraries/UiPath.Server.Configuration.OData.UploadPackage | Uploads a new package or a new version of an existing package. The content of the package is sent as a .nupkg file embedded in the HTTP request.
 
 
@@ -22,16 +22,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LibrariesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LibrariesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 feed_id = 'feed_id_example' # str |  (optional)
 
@@ -75,16 +75,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LibrariesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LibrariesApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 'key_example' # str | 
 feed_id = 'feed_id_example' # str |  (optional)
 
@@ -129,16 +129,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LibrariesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LibrariesApi(uipath_orchestrator_rest.ApiClient(configuration))
 search_term = '' # str |  (optional) (default to )
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -197,16 +197,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Read.  Required permissions:
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LibrariesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LibrariesApi(uipath_orchestrator_rest.ApiClient(configuration))
 package_id = 'package_id_example' # str | The Id of the package for which the versions are fetched.
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -265,16 +265,16 @@ OAuth required scopes: OR.Execution or OR.Execution.Write.  Required permissions
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.LibrariesApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.LibrariesApi(uipath_orchestrator_rest.ApiClient(configuration))
 file = '/path/to/file.txt' # file | 
 feed_id = 'feed_id_example' # str |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)

@@ -1,4 +1,4 @@
-# UIPathAPI.QueueDefinitionsApi
+# uipath_orchestrator_rest.QueueDefinitionsApi
 
 All URIs are relative to *https://cloud.uipath.com/jcaravaca42/jorge_pruebas/orchestrator_/*
 
@@ -9,11 +9,10 @@ Method | HTTP request | Description
 [**queue_definitions_get**](QueueDefinitionsApi.md#queue_definitions_get) | **GET** /odata/QueueDefinitions | Gets the list of queue definitions.
 [**queue_definitions_get_by_id**](QueueDefinitionsApi.md#queue_definitions_get_by_id) | **GET** /odata/QueueDefinitions({key}) | Gets a single queue definition based on its Id.
 [**queue_definitions_get_folders_for_queue_by_id**](QueueDefinitionsApi.md#queue_definitions_get_folders_for_queue_by_id) | **GET** /odata/QueueDefinitions/UiPath.Server.Configuration.OData.GetFoldersForQueue(id&#x3D;{id}) | Get all accesible folders where the queue is shared, and the total count of folders where it is shared (including unaccessible folders).
-[**queue_definitions_get_json_schema_definition_by_id_and_jsonschematype**](QueueDefinitionsApi.md#queue_definitions_get_json_schema_definition_by_id_and_jsonschematype) | **GET** /odata/QueueDefinitions({key})/UiPathODataSvc.GetJsonSchemaDefinition(jsonSchemaType&#x3D;&#39;{jsonSchemaType}&#39;) | Gets a given queue item JSON schema as a .json file, based on queue definition id.
+[**queue_definitions_get_json_schema_definition_by_id_and_jsonschematype**](QueueDefinitionsApi.md#queue_definitions_get_json_schema_definition_by_id_and_jsonschematype) | **GET** /odata/QueueDefinitions({key})/UiPathODataSvc.GetJsonSchemaDefinition(jsonSchemaType&#x3D;{jsonSchemaType}) | Gets a given queue item JSON schema as a .json file, based on queue definition id.
 [**queue_definitions_get_queues_across_folders**](QueueDefinitionsApi.md#queue_definitions_get_queues_across_folders) | **GET** /odata/QueueDefinitions/UiPath.Server.Configuration.OData.GetQueuesAcrossFolders | Get the queues from all the folders in which the current user has the Queues.View permission, except the ones in the excluded folder.
 [**queue_definitions_post**](QueueDefinitionsApi.md#queue_definitions_post) | **POST** /odata/QueueDefinitions | Creates a new queue.
 [**queue_definitions_put_by_id**](QueueDefinitionsApi.md#queue_definitions_put_by_id) | **PUT** /odata/QueueDefinitions({key}) | Edits a queue.
-[**queue_definitions_reports_by_id**](QueueDefinitionsApi.md#queue_definitions_reports_by_id) | **GET** /odata/QueueDefinitions({key})/UiPathODataSvc.Reports | Returns an Excel file containing all the items in the given queue.
 [**queue_definitions_share_to_folders**](QueueDefinitionsApi.md#queue_definitions_share_to_folders) | **POST** /odata/QueueDefinitions/UiPath.Server.Configuration.OData.ShareToFolders | Makes the queue visible in the specified folders.
 
 
@@ -28,16 +27,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
@@ -81,16 +80,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -149,16 +148,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 mandatory_permissions = ['mandatory_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; all permissions in this set must be met (optional)
 at_least_one_permissions = ['at_least_one_permissions_example'] # list[str] | If in a cross-folder scenario, these represent the additional permissions              required in the folders the data is retrieved from; at least one permission in this set must be met (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
@@ -219,16 +218,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -277,16 +276,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 id = 789 # int | 
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 select = 'select_example' # str | Limits the properties returned in the result. (optional)
@@ -335,16 +334,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queue
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
 json_schema_type = 'json_schema_type_example' # str | Possible values: QueueSchemaType
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
@@ -391,16 +390,16 @@ OAuth required scopes: OR.Queues or OR.Queues.Read.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 exclude_folder_id = 789 # int |  (optional)
 expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
 filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
@@ -459,17 +458,17 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.QueueDefinitionDto() # QueueDefinitionDto |  (optional)
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.QueueDefinitionDto() # QueueDefinitionDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -513,18 +512,18 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Required permissions: Queu
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
 key = 789 # int | 
-body = UIPathAPI.QueueDefinitionDto() # QueueDefinitionDto |  (optional)
+body = uipath_orchestrator_rest.QueueDefinitionDto() # QueueDefinitionDto |  (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
@@ -557,74 +556,6 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **queue_definitions_reports_by_id**
-> file queue_definitions_reports_by_id(key, expand=expand, filter=filter, select=select, orderby=orderby, top=top, skip=skip, count=count, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
-
-Returns an Excel file containing all the items in the given queue.
-
-OAuth required scopes: OR.Queues or OR.Queues.Read.  Required permissions: Queues.View and Transactions.View. DEPRECATED:  Please user other means to retrieve such reports: https://docs.uipath.com/orchestrator/automation-cloud/latest/release-notes/release-notes-june-2023#deprecation-of-reports-endpoints. This endpoint will be removed in future releases. Please refer to https://docs.uipath.com/orchestrator/reference
-
-### Example
-```python
-from __future__ import print_function
-import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
-from pprint import pprint
-
-# Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
-key = 789 # int | Given queue's Id.
-expand = 'expand_example' # str | Indicates the related entities to be represented inline. The maximum depth is 2. (optional)
-filter = 'filter_example' # str | Restricts the set of items returned. The maximum number of expressions is 100. (optional)
-select = 'select_example' # str | Limits the properties returned in the result. (optional)
-orderby = 'orderby_example' # str | Specifies the order in which items are returned. The maximum number of expressions is 5. (optional)
-top = 56 # int | Limits the number of items returned from a collection. The maximum value is 1000. (optional)
-skip = 56 # int | Excludes the specified number of items of the queried collection from the result. (optional)
-count = true # bool | Indicates whether the total count of items within a collection are returned in the result. (optional)
-x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
-
-try:
-    # Returns an Excel file containing all the items in the given queue.
-    api_response = api_instance.queue_definitions_reports_by_id(key, expand=expand, filter=filter, select=select, orderby=orderby, top=top, skip=skip, count=count, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling QueueDefinitionsApi->queue_definitions_reports_by_id: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **key** | **int**| Given queue&#39;s Id. | 
- **expand** | **str**| Indicates the related entities to be represented inline. The maximum depth is 2. | [optional] 
- **filter** | **str**| Restricts the set of items returned. The maximum number of expressions is 100. | [optional] 
- **select** | **str**| Limits the properties returned in the result. | [optional] 
- **orderby** | **str**| Specifies the order in which items are returned. The maximum number of expressions is 5. | [optional] 
- **top** | **int**| Limits the number of items returned from a collection. The maximum value is 1000. | [optional] 
- **skip** | **int**| Excludes the specified number of items of the queried collection from the result. | [optional] 
- **count** | **bool**| Indicates whether the total count of items within a collection are returned in the result. | [optional] 
- **x_uipath_organization_unit_id** | **int**| Folder/OrganizationUnit Id | [optional] 
-
-### Return type
-
-[**file**](file.md)
-
-### Authorization
-
-[OAuth2](../README.md#OAuth2)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/octet-stream
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **queue_definitions_share_to_folders**
 > queue_definitions_share_to_folders(body=body, x_uipath_organization_unit_id=x_uipath_organization_unit_id)
 
@@ -636,17 +567,17 @@ OAuth required scopes: OR.Queues or OR.Queues.Write.  Requires authentication.
 ```python
 from __future__ import print_function
 import time
-import UIPathAPI
-from UIPathAPI.rest import ApiException
+import uipath_orchestrator_rest
+from uipath_orchestrator_rest.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: OAuth2
-configuration = UIPathAPI.Configuration()
+configuration = uipath_orchestrator_rest.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = UIPathAPI.QueueDefinitionsApi(UIPathAPI.ApiClient(configuration))
-body = UIPathAPI.QueueFoldersShareDto() # QueueFoldersShareDto | Object containing the ids of the queue definitions and the ids of the folders where they should be shared. (optional)
+api_instance = uipath_orchestrator_rest.QueueDefinitionsApi(uipath_orchestrator_rest.ApiClient(configuration))
+body = uipath_orchestrator_rest.QueueFoldersShareDto() # QueueFoldersShareDto | Object containing the ids of the queue definitions and the ids of the folders where they should be shared. (optional)
 x_uipath_organization_unit_id = 789 # int | Folder/OrganizationUnit Id (optional)
 
 try:
