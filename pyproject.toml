@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uipath_orchestrator_rest"
-version = "1.17.1"
-description = "UiPath Orchestrator REST API Client 17.0"
+version = "18.0"
+description = "UiPath Orchestrator REST API Client 18.0"
 authors = [
     { name = "Jorge Caravaca", email = "taruelec@gmail.com" }
 ]
