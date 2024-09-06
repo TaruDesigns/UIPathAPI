@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "uipath-orchestrator-rest"
-VERSION = "18.0"
+VERSION = "18.1"
 # To install the library, run the following
 #
 # python setup.py install
@@ -33,7 +33,7 @@ REQUIRES = [
 setup(
     name=NAME,
     version=VERSION,
-    description="UiPath.WebApi 18.0",
+    description="UiPath.WebApi 18.1",
     author_email="",
     url="",
     install_requires=REQUIRES,

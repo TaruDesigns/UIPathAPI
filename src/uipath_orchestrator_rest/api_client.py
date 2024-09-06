@@ -172,10 +172,19 @@ class ApiClient(object):
                 return_data = None
 
         if _return_http_data_only:
-            return (return_data)
+            if ("$count", 'true') in query_params:
+                totalcount = int(json.loads(response_data.data)["@odata.count"])
+                return (return_data, totalcount)
+            else:
+                return (return_data)
         else:
-            return (return_data, response_data.status,
-                    response_data.getheaders())
+            if ("$count", 'true') in query_params:
+                totalcount = int(json.loads(response_data.data)["@odata.count"])
+                return (return_data, response_data.status,
+                        response_data.getheaders(), totalcount)
+            else:
+                return (return_data, response_data.status,
+                        response_data.getheaders())
 
     def sanitize_for_serialization(self, obj):
         """Builds a JSON POST object.
